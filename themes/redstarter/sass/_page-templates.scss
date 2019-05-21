@@ -22,13 +22,14 @@
     }
 }
 
-.site-header {
+.home-hero {
     background-image: url(../../assets/images/home-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 50rem;
     max-width: 100%;
+
 }
 
 .site-footer {
@@ -37,17 +38,24 @@
     background-repeat: repeat;
     background-position: center;
     height: 22rem;
+    display: flex;
+    justify-content: center;
     .site-info {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding: 0 10rem 0 10rem;
         flex-wrap: wrap;
+        padding-top: 3rem;
+        h3 {
+            color: #d99054;
+            font-family: 'Novecento Sans Web', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 7px;
+        }
             .contact-info {
                 width: 25%;
-                h3 {
-                    color: #d99054;
-                }
                 .email-block {
                     .fa-envelope {
                         color: $color__background-body;
@@ -101,8 +109,10 @@
             width: 50%;
             display: flex;
             justify-content: flex-end;
+            align-self: flex-start;
             img {
                 color: $color__background-body;
+                // width: 15rem;
             }
         }
             .website-copyright {
@@ -114,4 +124,9 @@
                 }
             }
     }
+}
+
+.hero-image-header {
+    height: 50rem;
+    width: 100%;
 }

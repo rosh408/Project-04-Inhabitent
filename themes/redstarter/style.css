@@ -255,15 +255,15 @@ th {
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("/assets/fonts/Novecento/fonts/");
-  src: url("/assets/fonts/Novecento/fonts/?#iefix") format("embedded-opentype"), url("/assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("/assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("/assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("/assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  src: url("../../assets/fonts/Novecento/fonts/");
+  src: url("../../assets/fonts/Novecento/fonts/?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("/assets/fonts/Novecento/fonts/");
-  src: url("/assets/fonts/Novecento/fonts//?#iefix") format("embedded-opentype"), url("/assets/fonts/Novecento/fonts//novecentosanswide-demibold-webfont.woff2") format("woff2"), url("/assets/fonts/Novecento/fonts//novecentosanswide-demibold-webfont.woff") format("woff"), url("/assets/fonts/Novecento/fonts//novecentosanswide-demibold-webfont.ttf") format("truetype"), url("/assets/fonts/Novecento/fonts//novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  src: url("../../assets/fonts/Novecento/fonts/");
+  src: url("../../assets/fonts/Novecento/fonts/?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -331,6 +331,7 @@ big {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 0 !important;
   font-size: 16px;
   font-size: 1rem; }
 
@@ -725,7 +726,7 @@ object {
   .main-navigation .menu-menu-menu-container .nav-menu {
     color: #fff; }
 
-.site-header {
+.home-hero {
   background-image: url(../../assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -738,7 +739,13 @@ object {
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
-  height: 22rem; }
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -751,11 +758,16 @@ object {
         justify-content: space-around;
     padding: 0 10rem 0 10rem;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding-top: 3rem; }
+    .site-footer .site-info h3 {
+      color: #d99054;
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      line-height: 7px; }
     .site-footer .site-info .contact-info {
       width: 25%; }
-      .site-footer .site-info .contact-info h3 {
-        color: #d99054; }
       .site-footer .site-info .contact-info .email-block .fa-envelope {
         color: #fff; }
       .site-footer .site-info .contact-info .email-block .email-info {
@@ -797,7 +809,9 @@ object {
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
       .site-footer .site-info .footer-logo img {
         color: #fff; }
     .site-footer .site-info .website-copyright {
@@ -810,3 +824,7 @@ object {
               justify-content: center; }
       .site-footer .site-info .website-copyright p {
         color: #fff; }
+
+.hero-image-header {
+  height: 50rem;
+  width: 100%; }
