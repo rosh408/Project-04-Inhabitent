@@ -29,13 +29,23 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 50rem;
-  max-width: 100%;
+  width: 100vw;
+  //   max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    position: relative;
+    width: 18rem;
+  }
 }
 
 // Main Section
 .inhabitent-journal {
   padding-top: 5rem;
-  justify-content: center;
+  display: flex;
+//   justify-content: center;
+  flex-direction: column;
   h2 {
     text-align: center;
   }
@@ -43,9 +53,24 @@
     display: flex;
     flex-direction: row;
     .journal-post-item {
-        img {
-        object-fit: cover;
-      }
+        list-style: none;
+        .post-thumbnail {
+            img {
+                object-fit: cover;
+            }
+        }
+        h3 {
+            font-family: 'Novecento Sans Web', sans-serif;
+            text-transform: uppercase;
+            color: #248A83;
+        }
+        p {
+            font-family: 'Merriweather Web', serif;
+            font-size: 15px;
+        }
+        .read-more {
+
+        }
     }
   }
 }

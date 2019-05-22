@@ -735,13 +735,26 @@ object {
   background-repeat: no-repeat;
   background-position: center;
   height: 50rem;
-  max-width: 100%; }
-
-.inhabitent-journal {
-  padding-top: 5rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .home-hero img {
+    position: relative;
+    width: 18rem; }
+
+.inhabitent-journal {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .inhabitent-journal h2 {
     text-align: center; }
   .inhabitent-journal .journal-post-content {
@@ -752,9 +765,18 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-    .inhabitent-journal .journal-post-content .journal-post-item img {
-      -o-object-fit: cover;
-         object-fit: cover; }
+    .inhabitent-journal .journal-post-content .journal-post-item {
+      list-style: none; }
+      .inhabitent-journal .journal-post-content .journal-post-item .post-thumbnail img {
+        -o-object-fit: cover;
+           object-fit: cover; }
+      .inhabitent-journal .journal-post-content .journal-post-item h3 {
+        font-family: 'Novecento Sans Web', sans-serif;
+        text-transform: uppercase;
+        color: #248A83; }
+      .inhabitent-journal .journal-post-content .journal-post-item p {
+        font-family: 'Merriweather Web', serif;
+        font-size: 15px; }
 
 .site-footer {
   background: url(../../assets/images/dark-wood.png);
