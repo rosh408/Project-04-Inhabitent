@@ -4,129 +4,147 @@
 
 /* Front page */
 
+// Header Section
 .site-header {
-    .main-navigation {
-        .menu-toggle {
-            color: $color__background-body;
-        }
+  .main-navigation {
+    .menu-toggle {
+      color: $color__background-body;
     }
+  }
 }
 
 .main-navigation {
-    display: flex;
-    justify-content: flex-end;
-    .menu-menu-menu-container {
-        .nav-menu {
-            color: $color__background-body;
-        }
+  display: flex;
+  justify-content: flex-end;
+  .menu-menu-menu-container {
+    .nav-menu {
+      color: $color__background-body;
     }
+  }
 }
 
 .home-hero {
-    background-image: url(../../assets/images/home-hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50rem;
-    max-width: 100%;
-
+  background-image: url(../../assets/images/home-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50rem;
+  max-width: 100%;
 }
 
-.site-footer {
-    background: url(../../assets/images/dark-wood.png);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    height: 22rem;
+// Main Section
+.inhabitent-journal {
+  padding-top: 5rem;
+  justify-content: center;
+  h2 {
+    text-align: center;
+  }
+  .journal-post-content {
     display: flex;
-    justify-content: center;
-    .site-info {
+    flex-direction: row;
+    .journal-post-item {
+        img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// Footer Section
+.site-footer {
+  background: url(../../assets/images/dark-wood.png);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  .site-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10rem 0 10rem;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    h3 {
+      color: #d99054;
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      line-height: 7px;
+    }
+    .contact-info {
+      width: 25%;
+      .email-block {
+        .fa-envelope {
+          color: $color__background-body;
+        }
+        .email-info {
+          text-decoration: none;
+          color: $color__background-body;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .number-block {
+        .fa-phone {
+          color: $color__background-body;
+        }
+        .number-info {
+          text-decoration: none;
+          color: $color__background-body;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .social-media-block {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding: 0 10rem 0 10rem;
-        flex-wrap: wrap;
-        padding-top: 3rem;
-        h3 {
-            color: #d99054;
-            font-family: 'Novecento Sans Web', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            line-height: 7px;
+        p {
+          .fab {
+            color: $color__background-body;
+          }
+          .fa-twitter-square {
+            padding: 0 12px 0 12px;
+          }
         }
-            .contact-info {
-                width: 25%;
-                .email-block {
-                    .fa-envelope {
-                        color: $color__background-body;
-                    }
-                    .email-info {
-                        text-decoration: none;
-                        color: $color__background-body;
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                .number-block {
-                    .fa-phone {
-                        color: $color__background-body;
-                    }
-                    .number-info {
-                        text-decoration: none;
-                        color: $color__background-body;
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                .social-media-block {
-                    display: flex;
-                    flex-direction: row;
-                    p {
-                        .fab {
-                            color: $color__background-body;
-                        }
-                        .fa-twitter-square {
-                            padding: 0 12px 0 12px;
-                        }
-                    }
-                }
-            }
-        .business-hours {
-            width: 25%;
-            h3 {
-                color: #d99054;
-            }
-            p {
-                color: $color__background-body;
-                span {
-                    font-weight: bolder;
-                }
-            }
-        }
-        .footer-logo {
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-            align-self: flex-start;
-            img {
-                color: $color__background-body;
-                // width: 15rem;
-            }
-        }
-            .website-copyright {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                p {
-                    color: $color__background-body;
-                }
-            }
+      }
     }
+    .business-hours {
+      width: 25%;
+      h3 {
+        color: #d99054;
+      }
+      p {
+        color: $color__background-body;
+        span {
+          font-weight: bolder;
+        }
+      }
+    }
+    .footer-logo {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-self: flex-start;
+      img {
+        color: $color__background-body;
+        // width: 15rem;
+      }
+    }
+    .website-copyright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      p {
+        color: $color__background-body;
+      }
+    }
+  }
 }
 
 .hero-image-header {
-    height: 50rem;
-    width: 100%;
+  height: 50rem;
 }
