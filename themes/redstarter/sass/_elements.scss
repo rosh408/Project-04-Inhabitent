@@ -8,6 +8,10 @@ html {
   @include font-size(1);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {

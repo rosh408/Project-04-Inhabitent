@@ -4,84 +4,117 @@
 
 /* Front page */
 
-// Home Hero Section
 .site-header {
-    display: flex;
-    flex-direction: row;
+  position: absolute;
+  width: 100%;
   .main-navigation {
+    // padding-top: 0.3rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    position: absolute;
-    a {
-        width: 5rem;
+    justify-content: space-around;
+    .tent-container {
+      .front-page-tent {
+        object-fit: contain;
+        width: 4rem;
+      }
     }
-    .menu-menu-menu-container {
+    .right-side-navigation {
+      display: flex;
+      flex-direction: row;
+      .menu-menu-menu-container {
         .menu {
-            .menu-item {
-                a {
-                    color: orange;
-                }
+          .menu-item {
+            a {
+              padding: 0 0.2rem 0 0.2rem;
+              color: #248a83;
+              text-transform: uppercase;
             }
+          }
         }
+      }
+      .right-side-navigation {
+        .header-search {
+          .search-field {
+            // display: none;
+          }
+        }
+      }
     }
   }
 }
 
+// Home Hero Section
 .home-hero {
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(../../assets/images/home-hero.jpg);
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50rem;
+  height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  img {
-    position: relative;
-    width: 18rem;
+  align-items: center;
+  .home-hero-logo {
+    max-width: 300px;
   }
 }
 
 // Shop Stuff Section
 .front-page-products {
-    .product-terms {
-        display: flex;
-        flex-direction: row;
-        .product-term {
-            list-style: none;
-        }
+  .product-terms {
+    display: flex;
+    flex-direction: row;
+    .product-term {
+      list-style: none;
     }
+  }
 }
 
 // Inhabitent Journal Section
 .inhabitent-journal {
   padding-top: 5rem;
   display: flex;
-//   justify-content: center;
   flex-direction: column;
   h2 {
     text-align: center;
   }
-  .journal-post-content {
+  .journal-container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    .journal-post-item {
+    justify-content: center;
+    .journal-post-content {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      width: 60%;
+
+      .journal-post-item {
         list-style: none;
         .post-thumbnail {
-            img {
-                object-fit: cover;
-            }
+          img {
+            object-fit: cover;
+          }
         }
         h3 {
-            font-family: 'Novecento Sans Web', sans-serif;
-            text-transform: uppercase;
-            color: #248A83;
+          font-family: 'Novecento Sans Web', sans-serif;
+          text-transform: uppercase;
+          color: #248a83;
         }
         p {
-            // font-family: 'Merriweather Web', serif;
-            font-size: 15px;
+          // font-family: 'Merriweather Web', serif;
+          font-size: 15px;
         }
+      }
+      &:nth-child
     }
   }
 }

@@ -335,6 +335,10 @@ html {
   font-size: 16px;
   font-size: 1rem; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 *,
 *:before,
 *:after {
@@ -717,13 +721,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  position: absolute;
+  width: 100%; }
   .site-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -732,32 +731,50 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    position: absolute; }
-    .site-header .main-navigation a {
-      width: 5rem; }
-    .site-header .main-navigation .menu-menu-menu-container .menu .menu-item a {
-      color: orange; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .site-header .main-navigation .tent-container .front-page-tent {
+      -o-object-fit: contain;
+         object-fit: contain;
+      width: 4rem; }
+    .site-header .main-navigation .right-side-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .site-header .main-navigation .right-side-navigation .menu-menu-menu-container .menu .menu-item a {
+        padding: 0 0.2rem 0 0.2rem;
+        color: #248a83;
+        text-transform: uppercase; }
 
 .home-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../../assets/images/home-hero.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../../assets/images/home-hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/home-hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../../assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50rem;
+  height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .home-hero img {
-    position: relative;
-    width: 18rem; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .home-hero .home-hero-logo {
+    max-width: 300px; }
 
 .front-page-products .product-terms {
   display: -webkit-box;
@@ -781,25 +798,36 @@ object {
           flex-direction: column; }
   .inhabitent-journal h2 {
     text-align: center; }
-  .inhabitent-journal .journal-post-content {
+  .inhabitent-journal .journal-container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .inhabitent-journal .journal-post-content .journal-post-item {
-      list-style: none; }
-      .inhabitent-journal .journal-post-content .journal-post-item .post-thumbnail img {
-        -o-object-fit: cover;
-           object-fit: cover; }
-      .inhabitent-journal .journal-post-content .journal-post-item h3 {
-        font-family: 'Novecento Sans Web', sans-serif;
-        text-transform: uppercase;
-        color: #248A83; }
-      .inhabitent-journal .journal-post-content .journal-post-item p {
-        font-size: 15px; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .inhabitent-journal .journal-container .journal-post-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin: 0;
+      padding: 0;
+      width: 60%; }
+      .inhabitent-journal .journal-container .journal-post-content .journal-post-item {
+        list-style: none; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item .post-thumbnail img {
+          -o-object-fit: cover;
+             object-fit: cover; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item h3 {
+          font-family: 'Novecento Sans Web', sans-serif;
+          text-transform: uppercase;
+          color: #248a83; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item p {
+          font-size: 15px; }
 
 .site-footer {
   background: url(../../assets/images/dark-wood.png);
@@ -894,3 +922,7 @@ object {
 
 .hero-image-header {
   height: 50rem; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
