@@ -716,21 +716,34 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-header .main-navigation .menu-toggle {
-  color: #fff; }
-
-.main-navigation {
+.site-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-  .main-navigation .menu-menu-menu-container .nav-menu {
-    color: #fff; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .site-header .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute; }
+    .site-header .main-navigation a {
+      width: 5rem; }
+    .site-header .main-navigation .menu-menu-menu-container .menu .menu-item a {
+      color: #fff; }
 
 .home-hero {
-  background-image: url(../../assets/images/home-hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../../assets/images/home-hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../../assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -745,6 +758,17 @@ object {
   .home-hero img {
     position: relative;
     width: 18rem; }
+
+.front-page-products .product-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .front-page-products .product-terms .product-term {
+    list-style: none; }
 
 .inhabitent-journal {
   padding-top: 5rem;
@@ -775,7 +799,6 @@ object {
         text-transform: uppercase;
         color: #248A83; }
       .inhabitent-journal .journal-post-content .journal-post-item p {
-        font-family: 'Merriweather Web', serif;
         font-size: 15px; }
 
 .site-footer {

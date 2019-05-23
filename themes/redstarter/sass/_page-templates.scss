@@ -4,43 +4,57 @@
 
 /* Front page */
 
-// Header Section
+// Home Hero Section
 .site-header {
+    display: flex;
+    flex-direction: row;
   .main-navigation {
-    .menu-toggle {
-      color: $color__background-body;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    a {
+        width: 5rem;
     }
-  }
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: flex-end;
-  .menu-menu-menu-container {
-    .nav-menu {
-      color: $color__background-body;
+    .menu-menu-menu-container {
+        .menu {
+            .menu-item {
+                a {
+                    color: $color__background-body;
+                }
+            }
+        }
     }
   }
 }
 
 .home-hero {
-  background-image: url(../../assets/images/home-hero.jpg);
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(../../assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 50rem;
   width: 100vw;
-  //   max-width: 100%;
   display: flex;
   justify-content: center;
-
   img {
     position: relative;
     width: 18rem;
   }
 }
 
-// Main Section
+// Shop Stuff Section
+.front-page-products {
+    .product-terms {
+        display: flex;
+        flex-direction: row;
+        .product-term {
+            list-style: none;
+        }
+    }
+}
+
+// Inhabitent Journal Section
 .inhabitent-journal {
   padding-top: 5rem;
   display: flex;
@@ -65,11 +79,8 @@
             color: #248A83;
         }
         p {
-            font-family: 'Merriweather Web', serif;
+            // font-family: 'Merriweather Web', serif;
             font-size: 15px;
-        }
-        .read-more {
-
         }
     }
   }
