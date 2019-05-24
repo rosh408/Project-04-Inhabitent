@@ -8,7 +8,6 @@
   position: absolute;
   width: 100%;
   .main-navigation {
-    // padding-top: 0.3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -85,6 +84,11 @@
   flex-direction: column;
   h2 {
     text-align: center;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-weight: lighter;
+    font-size: 2.4rem;
   }
   .journal-container {
     width: 100%;
@@ -95,10 +99,12 @@
       flex-direction: row;
       margin: 0;
       padding: 0;
-      width: 60%;
-
+      width: 80%;
       .journal-post-item {
         list-style: none;
+        padding: 0 1rem 0 1rem;
+        border: 1px solid #e1e1e1;
+        width: 33.33%;
         .post-thumbnail {
           img {
             object-fit: cover;
@@ -110,11 +116,10 @@
           color: #248a83;
         }
         p {
-          // font-family: 'Merriweather Web', serif;
+          font-family: 'Merriweather Web', serif;
           font-size: 15px;
         }
       }
-      &:nth-child
     }
   }
 }
@@ -200,7 +205,6 @@
       align-self: flex-start;
       img {
         color: $color__background-body;
-        // width: 15rem;
       }
     }
     .website-copyright {
@@ -214,6 +218,40 @@
   }
 }
 
-.hero-image-header {
-  height: 50rem;
+/* Journal Page */
+.blog {
+  .hfeed {
+    .site-header {
+      border-bottom: 1px solid #a1a1a1;
+    }
+    .site-content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0 7rem 0 7rem;
+      padding-top: 3.8rem;
+      .content-area {
+        width: 73%;
+        border-right: 1px solid #a1a1a1;
+
+      }
+      .widget-area {
+        width: 27%;
+      }
+    }
+  }
+}
+
+/* About Page */
+.page-about {
+  .hfeed {
+    .site-header {
+      .main-navigation {
+      position: absolute;
+      }
+    }
+    .hero-image-header {
+      height: 50rem;
+    }
+  }
 }
