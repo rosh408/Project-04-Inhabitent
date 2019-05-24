@@ -733,10 +733,6 @@ object {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .site-header .main-navigation .tent-container .front-page-tent {
-      -o-object-fit: contain;
-         object-fit: contain;
-      width: 4rem; }
     .site-header .main-navigation .right-side-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -810,7 +806,8 @@ object {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 4rem; }
     .inhabitent-journal .journal-container .journal-post-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -825,18 +822,33 @@ object {
       .inhabitent-journal .journal-container .journal-post-content .journal-post-item {
         list-style: none;
         padding: 0 1rem 0 1rem;
-        border: 1px solid #e1e1e1;
         width: 33.33%; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item .post-thumbnail img {
           -o-object-fit: cover;
              object-fit: cover; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text {
+          border: 1px solid #e1e1e1;
+          padding: .8rem; }
+          .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text .date-comment {
+            font-size: 0.75rem; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item p {
+          font-family: 'Merriweather Web', serif;
+          font-size: 15px;
+          font-size: .9rem; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item h3 {
           font-family: 'Novecento Sans Web', sans-serif;
           text-transform: uppercase;
-          color: #248a83; }
-        .inhabitent-journal .journal-container .journal-post-content .journal-post-item p {
-          font-family: 'Merriweather Web', serif;
-          font-size: 15px; }
+          color: #248a83;
+          font-size: 1.3rem;
+          letter-spacing: 2px; }
+        .inhabitent-journal .journal-container .journal-post-content .journal-post-item .read-more {
+          font-family: 'Novecento Sans Web', sans-serif;
+          font-size: .9rem;
+          border: 1px solid black;
+          padding: 0.5rem;
+          text-decoration: none;
+          color: black;
+          width: 6rem; }
 
 .site-footer {
   background: url(../../assets/images/dark-wood.png);
@@ -954,6 +966,15 @@ object {
   .page-find-us .hfeed .site-content .widget-area {
     width: 27%; }
 
+/* Front Page/About Header Text and SVG color */
+.page-about .hfeed .site-header .main-navigation .tent-container .front-page-tent,
+.home .hfeed .site-header .main-navigation .tent-container .front-page-tent {
+  width: 4rem; }
+
+.page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a,
+.home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a {
+  color: #fff; }
+
 /* About Page  */
 .page-about .hfeed .site-header .main-navigation {
   position: absolute; }
@@ -961,32 +982,31 @@ object {
 .page-about .hfeed .site-content .content-area .site-main article .entry-header {
   display: none; }
 
-.page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header {
-  height: 50rem; }
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header .entry-title {
-    color: #fff;
-    text-transform: uppercase;
+.page-about .hfeed .site-content .content-area .site-main article .entry-content {
+  margin: 0; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header {
+    height: 50rem; }
+    .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header .entry-title {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 3rem; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2,
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 0 auto; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2 {
     font-family: 'Novecento Sans Web', sans-serif;
-    font-size: 3rem; }
-
-.page-about .hfeed .site-content .content-area .site-main article .entry-content h2,
-.page-about .hfeed .site-content .content-area .site-main article .entry-content p {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 0 auto; }
-
-.page-about .hfeed .site-content .content-area .site-main article .entry-content h2 {
-  font-family: 'Novecento Sans Web', sans-serif;
-  color: #2f1339;
-  margin-top: 2rem;
-  margin-bottom: 1.2rem;
-  font-size: 2rem; }
-
-.page-about .hfeed .site-content .content-area .site-main article .entry-content p {
-  font-family: 'Merriweather web', sans-serif;
-  margin-top: 1.6rem;
-  margin-bottom: 2rem;
-  line-height: 1.9rem; }
+    color: #2f1339;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 2rem; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+    font-family: 'Merriweather web', sans-serif;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.9rem; }
 
 /*--------------------------------------------------------------
 # Header

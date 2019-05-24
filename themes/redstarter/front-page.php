@@ -58,8 +58,8 @@ get_header(); ?>
 								<img src="<?php the_post_thumbnail('large'); ?>
 						    	</a>
 						    <div class=" journal-post-text">
+								<p class="date-comment"> <?php echo get_the_date(); ?> | <?php echo get_comments_number(); ?> Comments </p>
 								<h3><?php the_title(); ?></h3>
-								<p> <?php echo get_the_date(); ?> | <?php echo get_comments_number(); ?> Comments </p>
 								<a class=" read-more" href="<?php echo get_the_permalink(); ?> "> Read Entry</a>
 							</div>
 						</li>

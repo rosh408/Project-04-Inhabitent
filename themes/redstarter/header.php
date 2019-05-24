@@ -29,7 +29,7 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="tent-container">
-					<a class="front-page-tent" href="<?php echo get_home_url() ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg' ?>"></a>
+					<a class="front-page-tent" href="<?php echo get_home_url() ?>"><img src="<?php echo get_template_directory_uri() . '../../assets/images/logos/inhabitent-logo-tent.svg'; ?>"></a>
 				</div>
 				<div class="right-side-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
