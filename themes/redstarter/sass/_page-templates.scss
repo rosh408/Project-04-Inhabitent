@@ -218,8 +218,9 @@
   }
 }
 
-/* Journal Page */
-.blog {
+/* Journal/Find Us Sidebar*/
+.blog,
+.page-find-us {
   .hfeed {
     .site-header {
       border-bottom: 1px solid #a1a1a1;
@@ -233,7 +234,6 @@
       .content-area {
         width: 73%;
         border-right: 1px solid #a1a1a1;
-
       }
       .widget-area {
         width: 27%;
@@ -242,16 +242,54 @@
   }
 }
 
-/* About Page */
+/* About Page  */
 .page-about {
   .hfeed {
     .site-header {
       .main-navigation {
-      position: absolute;
+        position: absolute;
       }
     }
-    .hero-image-header {
-      height: 50rem;
+    .site-content {
+      .content-area {
+        .site-main {
+          article {
+            .entry-header {
+              display: none;
+            }
+            .entry-content {
+              .hero-image-header {
+                height: 50rem;
+                .entry-title {
+                  color: $color__background-body;
+                  text-transform: uppercase;
+                  font-family: 'Novecento Sans Web', sans-serif;
+                  font-size: 3rem;
+                }
+              }
+              h2,
+              p {
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto 0 auto;
+              }
+              h2 {
+                font-family: 'Novecento Sans Web', sans-serif;
+                color: #2f1339;
+                margin-top: 2rem;
+                margin-bottom: 1.2rem;
+                font-size: 2rem;
+              }
+              p {
+                font-family: 'Merriweather web', sans-serif;
+                margin-top: 1.6rem;
+                margin-bottom: 2rem;
+                line-height: 1.9rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

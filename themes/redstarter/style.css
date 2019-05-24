@@ -929,11 +929,13 @@ object {
       .site-footer .site-info .website-copyright p {
         color: #fff; }
 
-/* Journal Page */
-.blog .hfeed .site-header {
+/* Journal/Find Us Sidebar*/
+.blog .hfeed .site-header,
+.page-find-us .hfeed .site-header {
   border-bottom: 1px solid #a1a1a1; }
 
-.blog .hfeed .site-content {
+.blog .hfeed .site-content,
+.page-find-us .hfeed .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,18 +946,47 @@ object {
   width: 100%;
   margin: 0 7rem 0 7rem;
   padding-top: 3.8rem; }
-  .blog .hfeed .site-content .content-area {
+  .blog .hfeed .site-content .content-area,
+  .page-find-us .hfeed .site-content .content-area {
     width: 73%;
     border-right: 1px solid #a1a1a1; }
-  .blog .hfeed .site-content .widget-area {
+  .blog .hfeed .site-content .widget-area,
+  .page-find-us .hfeed .site-content .widget-area {
     width: 27%; }
 
-/* About Page */
+/* About Page  */
 .page-about .hfeed .site-header .main-navigation {
   position: absolute; }
 
-.page-about .hfeed .hero-image-header {
+.page-about .hfeed .site-content .content-area .site-main article .entry-header {
+  display: none; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header {
   height: 50rem; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header .entry-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 3rem; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-content h2,
+.page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 0 auto; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-content h2 {
+  font-family: 'Novecento Sans Web', sans-serif;
+  color: #2f1339;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  font-size: 2rem; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+  font-family: 'Merriweather web', sans-serif;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.9rem; }
 
 /*--------------------------------------------------------------
 # Header
