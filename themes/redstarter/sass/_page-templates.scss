@@ -55,11 +55,53 @@
 
 // Shop Stuff Section
 .front-page-products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-weight: lighter;
+    font-size: 2.4rem;
+  }
   .product-terms {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0 10rem 0 10rem;
     .product-term {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
       list-style: none;
+      margin: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 21rem;
+      img {
+        width: 4rem;
+        margin-top: .7rem;
+      }
+      .term-description {
+        margin: 1.2rem 1rem .5rem 1rem;
+        text-align: center;
+        font-family: 'Merriweather Web', sans-serif;
+      }
+      .term-stuff {
+        background-color: #248A83;
+        padding: .8rem 1.6rem;
+        a {
+        color: $color__background-body;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Novecento Sans Web', sans-serif;
+        }        
+      }
     }
   }
 }
@@ -120,10 +162,10 @@
           font-family: 'Novecento Sans Web', sans-serif;
           font-size: .9rem;
           border: 1px solid black;
-          padding: 0.5rem;
+          padding: 0.8rem;
           text-decoration: none;
           color: black;
-          width: 6rem;
+          text-transform: uppercase;
         }
       }
     }
@@ -244,6 +286,20 @@
       .widget-area {
         width: 27%;
       }
+    }
+  }
+}
+
+/* Hide Shop Sidebar widget */
+.archive {
+  .site-content {
+    .content-area {
+      .nav-previous {
+        display: none;
+      }
+    }
+    .widget-area {
+      display: none;
     }
   }
 }

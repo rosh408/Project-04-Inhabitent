@@ -29,8 +29,8 @@ get_header(); ?>
 										'/assets/images/product-type-icons/' .
 										$term->slug . '.svg'
 									?>" />
-						<p><?php echo $term->description; ?></p>
-						<p>
+						<p class="term-description"><?php echo $term->description; ?></p>
+						<p class="term-stuff">
 							<a href="<?php echo get_term_link($term); ?>">
 								<?php echo $term->name; ?> Stuff
 							</a>

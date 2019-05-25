@@ -772,16 +772,70 @@ object {
   .home-hero .home-hero-logo {
     max-width: 300px; }
 
-.front-page-products .product-terms {
+.front-page-products {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .front-page-products .product-terms .product-term {
-    list-style: none; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .front-page-products h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-weight: lighter;
+    font-size: 2.4rem; }
+  .front-page-products .product-terms {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    padding: 0 10rem 0 10rem; }
+    .front-page-products .product-terms .product-term {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      list-style: none;
+      margin: 0 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 21rem; }
+      .front-page-products .product-terms .product-term img {
+        width: 4rem;
+        margin-top: .7rem; }
+      .front-page-products .product-terms .product-term .term-description {
+        margin: 1.2rem 1rem .5rem 1rem;
+        text-align: center;
+        font-family: 'Merriweather Web', sans-serif; }
+      .front-page-products .product-terms .product-term .term-stuff {
+        background-color: #248A83;
+        padding: .8rem 1.6rem; }
+        .front-page-products .product-terms .product-term .term-stuff a {
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: 'Novecento Sans Web', sans-serif; }
 
 .inhabitent-journal {
   padding-top: 5rem;
@@ -845,10 +899,10 @@ object {
           font-family: 'Novecento Sans Web', sans-serif;
           font-size: .9rem;
           border: 1px solid black;
-          padding: 0.5rem;
+          padding: 0.8rem;
           text-decoration: none;
           color: black;
-          width: 6rem; }
+          text-transform: uppercase; }
 
 .site-footer {
   background: url(../../assets/images/dark-wood.png);
@@ -965,6 +1019,13 @@ object {
   .blog .hfeed .site-content .widget-area,
   .page-find-us .hfeed .site-content .widget-area {
     width: 27%; }
+
+/* Hide Shop Sidebar widget */
+.archive .site-content .content-area .nav-previous {
+  display: none; }
+
+.archive .site-content .widget-area {
+  display: none; }
 
 /* Front Page/About Header Text and SVG color */
 .page-about .hfeed .site-header .main-navigation .tent-container .front-page-tent,
