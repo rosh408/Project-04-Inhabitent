@@ -823,14 +823,14 @@ object {
       width: 21rem; }
       .front-page-products .product-terms .product-term img {
         width: 4rem;
-        margin-top: .7rem; }
+        margin-top: 0.7rem; }
       .front-page-products .product-terms .product-term .term-description {
-        margin: 1.2rem 1rem .5rem 1rem;
+        margin: 1.2rem 1rem 0.5rem 1rem;
         text-align: center;
         font-family: 'Merriweather Web', sans-serif; }
       .front-page-products .product-terms .product-term .term-stuff {
-        background-color: #248A83;
-        padding: .8rem 1.6rem; }
+        background-color: #248a83;
+        padding: 0.8rem 1.6rem; }
         .front-page-products .product-terms .product-term .term-stuff a {
           color: #fff;
           text-decoration: none;
@@ -882,13 +882,13 @@ object {
              object-fit: cover; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text {
           border: 1px solid #e1e1e1;
-          padding: .8rem; }
+          padding: 0.8rem; }
           .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text .date-comment {
             font-size: 0.75rem; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item p {
           font-family: 'Merriweather Web', serif;
           font-size: 15px;
-          font-size: .9rem; }
+          font-size: 0.9rem; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item h3 {
           font-family: 'Novecento Sans Web', sans-serif;
           text-transform: uppercase;
@@ -897,7 +897,7 @@ object {
           letter-spacing: 2px; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item .read-more {
           font-family: 'Novecento Sans Web', sans-serif;
-          font-size: .9rem;
+          font-size: 0.9rem;
           border: 1px solid black;
           padding: 0.8rem;
           text-decoration: none;
@@ -995,6 +995,101 @@ object {
       .site-footer .site-info .website-copyright p {
         color: #fff; }
 
+/* Shop Page */
+.archive .site-content .container {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .archive .site-content .container .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 1px dashed #c8c8c8; }
+    .archive .site-content .container .page-header h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2.3rem;
+      margin-bottom: 0;
+      letter-spacing: .2rem; }
+    .archive .site-content .container .page-header .product-terms {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0;
+      padding: 0; }
+      .archive .site-content .container .page-header .product-terms li {
+        list-style: none;
+        padding: 0 1.2rem; }
+        .archive .site-content .container .page-header .product-terms li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #248a83;
+          font-size: 1.2rem; }
+  .archive .site-content .container .product-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .archive .site-content .container .product-grid .product {
+      margin-top: 2rem;
+      width: 25%; }
+      .archive .site-content .container .product-grid .product p {
+        display: none; }
+
+/* Journal Page */
+/* About Page  */
+.page-about .hfeed .site-header .main-navigation {
+  position: absolute; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-header {
+  display: none; }
+
+.page-about .hfeed .site-content .content-area .site-main article .entry-content {
+  margin: 0; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header {
+    height: 50rem; }
+    .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header .entry-title {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 3rem; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2,
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 0 auto; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2 {
+    font-family: 'Novecento Sans Web', sans-serif;
+    color: #2f1339;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 2rem; }
+  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
+    font-family: 'Merriweather web', sans-serif;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.9rem; }
+
+/* Find Us Page */
 /* Journal/Find Us Sidebar*/
 .blog .hfeed .site-header,
 .page-find-us .hfeed .site-header {
@@ -1035,39 +1130,6 @@ object {
 .page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a,
 .home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a {
   color: #fff; }
-
-/* About Page  */
-.page-about .hfeed .site-header .main-navigation {
-  position: absolute; }
-
-.page-about .hfeed .site-content .content-area .site-main article .entry-header {
-  display: none; }
-
-.page-about .hfeed .site-content .content-area .site-main article .entry-content {
-  margin: 0; }
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header {
-    height: 50rem; }
-    .page-about .hfeed .site-content .content-area .site-main article .entry-content .hero-image-header .entry-title {
-      color: #fff;
-      text-transform: uppercase;
-      font-family: 'Novecento Sans Web', sans-serif;
-      font-size: 3rem; }
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2,
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 0 auto; }
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content h2 {
-    font-family: 'Novecento Sans Web', sans-serif;
-    color: #2f1339;
-    margin-top: 2rem;
-    margin-bottom: 1.2rem;
-    font-size: 2rem; }
-  .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
-    font-family: 'Merriweather web', sans-serif;
-    margin-top: 1.6rem;
-    margin-bottom: 2rem;
-    line-height: 1.9rem; }
 
 /*--------------------------------------------------------------
 # Header
