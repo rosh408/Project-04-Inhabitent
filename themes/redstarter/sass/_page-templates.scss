@@ -140,6 +140,7 @@
         }
         .journal-post-text {
           border: 1px solid #e1e1e1;
+          border-top-width: 0.3rem;
           padding: 0.8rem;
           .date-comment {
             font-size: 0.75rem;
@@ -270,8 +271,7 @@
   .site-content {
     .container {
       padding-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       width: 1120px;
       .page-header {
         display: flex;
@@ -279,13 +279,14 @@
         align-content: center;
         flex-direction: column;
         border-bottom: 1px dashed #c8c8c8;
+        line-height: 4rem;
         h2 {
           text-align: center;
           text-transform: uppercase;
           font-family: 'Novecento Sans Web', sans-serif;
           font-size: 2.3rem;
           margin-bottom: 0;
-          letter-spacing: .2rem;
+          letter-spacing: 0.2rem;
         }
         .product-terms {
           display: flex;
@@ -308,14 +309,32 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         .product {
           margin-top: 2rem;
-          width: 25%;
+          width: 24%;
+          img {
+            width: 19rem;
+            height: 14rem;
+            object-fit: cover;
+          }
           p {
             display: none;
           }
         }
       }
+    }
+  }
+}
+
+/* DO Page *Shop Page* */
+.term-do {
+  .container {
+    .page-header {
+      text-align: center;
+    }
+    .product {
+      width: 25%;
     }
   }
 }
@@ -388,7 +407,7 @@
       display: flex;
       flex-direction: row;
       width: 100%;
-      margin: 0 7rem 0 7rem;
+      margin: 0 7rem;
       padding-top: 3.8rem;
       .content-area {
         width: 73%;

@@ -882,6 +882,7 @@ object {
              object-fit: cover; }
         .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text {
           border: 1px solid #e1e1e1;
+          border-top-width: 0.3rem;
           padding: 0.8rem; }
           .inhabitent-journal .journal-container .journal-post-content .journal-post-item .journal-post-text .date-comment {
             font-size: 0.75rem; }
@@ -998,8 +999,7 @@ object {
 /* Shop Page */
 .archive .site-content .container {
   padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1120px; }
   .archive .site-content .container .page-header {
     display: -webkit-box;
@@ -1014,14 +1014,15 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border-bottom: 1px dashed #c8c8c8; }
+    border-bottom: 1px dashed #c8c8c8;
+    line-height: 4rem; }
     .archive .site-content .container .page-header h2 {
       text-align: center;
       text-transform: uppercase;
       font-family: 'Novecento Sans Web', sans-serif;
       font-size: 2.3rem;
       margin-bottom: 0;
-      letter-spacing: .2rem; }
+      letter-spacing: 0.2rem; }
     .archive .site-content .container .page-header .product-terms {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1048,12 +1049,27 @@ object {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .archive .site-content .container .product-grid .product {
       margin-top: 2rem;
-      width: 25%; }
+      width: 24%; }
+      .archive .site-content .container .product-grid .product img {
+        width: 19rem;
+        height: 14rem;
+        -o-object-fit: cover;
+           object-fit: cover; }
       .archive .site-content .container .product-grid .product p {
         display: none; }
+
+/* DO Page *Shop Page* */
+.term-do .container .page-header {
+  text-align: center; }
+
+.term-do .container .product {
+  width: 25%; }
 
 /* Journal Page */
 /* About Page  */
@@ -1105,7 +1121,7 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  margin: 0 7rem 0 7rem;
+  margin: 0 7rem;
   padding-top: 3.8rem; }
   .blog .hfeed .site-content .content-area,
   .page-find-us .hfeed .site-content .content-area {
