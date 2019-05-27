@@ -948,14 +948,16 @@ object {
         color: #fff; }
       .site-footer .site-info .contact-info .email-block .email-info {
         text-decoration: none;
-        color: #fff; }
+        color: #fff;
+        font-family: 'Merriweather Web', sans-serif; }
         .site-footer .site-info .contact-info .email-block .email-info:hover {
           text-decoration: underline; }
       .site-footer .site-info .contact-info .number-block .fa-phone {
         color: #fff; }
       .site-footer .site-info .contact-info .number-block .number-info {
         text-decoration: none;
-        color: #fff; }
+        color: #fff;
+        font-family: 'Merriweather Web', sans-serif; }
         .site-footer .site-info .contact-info .number-block .number-info:hover {
           text-decoration: underline; }
       .site-footer .site-info .contact-info .social-media-block {
@@ -975,9 +977,10 @@ object {
       .site-footer .site-info .business-hours h3 {
         color: #d99054; }
       .site-footer .site-info .business-hours p {
-        color: #fff; }
+        color: #fff;
+        font-family: 'Merriweather Web', sans-serif; }
         .site-footer .site-info .business-hours p span {
-          font-weight: bolder; }
+          font-family: 'Merriweather Web', sans-serif; }
     .site-footer .site-info .footer-logo {
       width: 50%;
       display: -webkit-box;
@@ -1061,6 +1064,19 @@ object {
     .archive .site-content .container .product-grid .product {
       margin-top: 2rem;
       width: 24%; }
+      .archive .site-content .container .product-grid .product .product-info {
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        border-top-width: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: .4rem; }
+        .archive .site-content .container .product-grid .product .product-info .product-title {
+          white-space: nowrap;
+          overflow: hidden; }
+          .archive .site-content .container .product-grid .product .product-info .product-title:after {
+            content: '...........................................................'; }
       .archive .site-content .container .product-grid .product img {
         width: 19rem;
         height: 14rem;
@@ -1210,7 +1226,7 @@ object {
         margin-left: 2rem; }
         .single-product .site-content .content-area .product .product-content .entry-title {
           margin-top: 0;
-          margin-bottom: .4rem;
+          margin-bottom: 0.4rem;
           color: #d99054;
           font-family: 'Novecento Sans Web', sans-serif;
           text-transform: uppercase; }
@@ -1226,12 +1242,12 @@ object {
           background: transparent;
           border: 1px solid black;
           font-family: 'Novecento Sans Web', sans-serif;
-          font-size: .9rem;
-          padding: .8rem 1rem;
-          margin: 0 .2rem;
+          font-size: 0.9rem;
+          padding: 0.8rem 1rem;
+          margin: 0 0.2rem;
           border-radius: 0; }
           .single-product .site-content .content-area .product .product-content .social-buttons button:hover {
-            background-color: #248A83;
+            background-color: #248a83;
             -webkit-box-shadow: none;
                     box-shadow: none;
             color: #fff; }

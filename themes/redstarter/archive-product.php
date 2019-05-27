@@ -44,11 +44,12 @@ get_header(); ?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <header class="entry-header">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('large'); ?>
+                                    <a href="<?php echo get_the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
                                 <?php endif; ?>
-
-                                <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-                                <?php echo "$", CFS()->get('product_price'); ?>
+                                <div class="product-info">
+                                    <div class="product-title"><?php the_title(); ?></div>
+                                    <div class="product-price"><?php echo "$", CFS()->get('product_price'); ?></div>
+                                </div>
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
