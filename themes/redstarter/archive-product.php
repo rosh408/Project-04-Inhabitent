@@ -41,7 +41,21 @@ get_header(); ?>
                 <?php /* Start the Loop */ ?>
                 <div class="product-grid">
                     <?php while (have_posts()) : the_post(); ?>
-                        <?php get_template_part('template-parts/content') ?>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <header class="entry-header">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail('large'); ?>
+                                <?php endif; ?>
+
+                                <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+                                <?php echo "$", CFS()->get('product_price'); ?>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <?php the_excerpt(); ?>
+                            </div><!-- .entry-content -->
+                        </article><!-- #post-## -->
+
                     <?php endwhile; ?>
                     <?php the_posts_navigation(); ?>
                 </div><!-- .product-grid -->

@@ -350,7 +350,10 @@
 }
 
 /* Journal/ Find Us page and Sidebar styling */
-.blog, .page-find-us, .single-post, .date {
+.blog,
+.page-find-us,
+.single-post,
+.date {
   .hfeed {
     width: 100%;
     .site-header {
@@ -371,12 +374,10 @@
           position: relative;
           .entry-title {
             position: absolute;
-
           }
           .entry-meta {
             position: absolute;
           }
-
         }
       }
       .widget-area {
@@ -397,13 +398,13 @@
         }
         .widget {
           margin-bottom: 2.5rem;
-          
+
           .widget-title {
             text-transform: uppercase;
             color: #2f1339;
             font-family: 'Novecento Sans Web', sans-serif;
             font-size: 1.5rem;
-            letter-spacing: .15rem;
+            letter-spacing: 0.15rem;
           }
         }
         .sidebar-container-item {
@@ -412,7 +413,9 @@
             color: #248a83;
           }
         }
-        a, span, p {
+        a,
+        span,
+        p {
           font-family: 'Merriweather Web', sans-serif;
         }
       }
@@ -420,8 +423,67 @@
   }
 }
 
-/* Single Product Hide Sidebar */
+/* Single Product Page */
+.single-product {
+  .site-content {
+    margin: 0 auto;
+    width: 1120px;
+    .content-area {
+      padding: 8rem 0 4rem 0;
+      .product {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .product-image {
+          width: 50%;
+          margin-right: 2rem;
+        }
+        .product-content {
+          width: 50%;
+          margin-left: 2rem;
+          .entry-title {
+            margin-top: 0;
+            margin-bottom: .4rem;
+            color: #d99054;
+            font-family: 'Novecento Sans Web', sans-serif;
+            text-transform: uppercase;
+      
+          }
+          .product-price {
+            font-family: 'Novecento Sans Web', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 0;
+          }
+          .product-descrip {
+            p {
+              font-family: 'Merriweather Web', sans-serif;
+              line-height: 1.7rem;
+            }
+          }
+          .social-buttons {
+            button {
+              text-transform: uppercase;
+              background: transparent;
+              border: 1px solid black;
+              font-family: 'Novecento Sans Web', sans-serif;
+              font-size: .9rem;
+              padding: .8rem 1rem;
+              margin: 0 .2rem;
+              border-radius: 0;
+              
+              &:hover {
+                background-color: #248A83;
+                box-shadow: none;
+                color: #fff;
 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /* Find Us Page */
 .page-find-us {
@@ -429,7 +491,8 @@
     .entry-title {
       position: absolute;
     }
-    .entry-title, h2 {
+    .entry-title,
+    h2 {
       text-transform: uppercase;
       color: #2f1339;
       font-family: 'Novecento Sans Web', sans-serif;
@@ -491,11 +554,12 @@
   }
 }
 
-
 /* Shop, Journal, Find Us page styling */
 .archive,
 .blog,
-.page-find-us, .single-product, .single-post {
+.page-find-us,
+.single-product,
+.single-post {
   .site-header {
     border-bottom: 1px solid #e1e1e1;
     .front-page-tent {
@@ -513,9 +577,9 @@
   }
 }
 
-
 /* Hide Shop Sidebar widget */
-.archive, .single-product {
+.archive,
+.single-product {
   .site-content {
     .content-area {
       .nav-previous {

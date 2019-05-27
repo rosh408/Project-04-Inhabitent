@@ -18,26 +18,21 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<header class="entry-header">
+					<div class="product-image">
 						<?php if (has_post_thumbnail()) : ?>
 							<?php the_post_thumbnail('large'); ?>
 						<?php endif; ?>
+					</div><!-- .entry-header -->
 
+					<div class="product-content">
 						<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-
-						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-						</div><!-- .entry-meta -->
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php
-						wp_link_pages(array(
-							'before' => '<div class="page-links">' . esc_html('Pages:'),
-							'after'  => '</div>',
-						));
-						?>
+						<p class="product-price"><?php echo "$", CFS()->get('product_price'); ?></p>
+						<div class="product-descrip"><?php the_content(); ?></div>
+						<div class="social-buttons">
+							<button><i class="fab fa-facebook-f"></i>&nbsp Like</button>
+							<button><i class="fab fa-twitter"></i>&nbsp Tweet</button>
+							<button><i class="fab fa-pinterest"></i>&nbsp Pin</button>
+						</div>
 					</div><!-- .entry-content -->
 
 					<footer class="entry-footer">
@@ -45,7 +40,6 @@ get_header(); ?>
 					</footer><!-- .entry-footer -->
 				</article><!-- #post-## -->
 
-				<?php echo "$", CFS()->get('product_price'); ?>
 			<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>
 
