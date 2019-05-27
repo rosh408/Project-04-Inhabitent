@@ -21,13 +21,13 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?>
 				<div class="product-grid">
-					<?php while (have_posts()) : the_post(); ?>
-
+				<?php while (have_posts()) : the_post(); ?>
+					
 						<?php
 						get_template_part('template-parts/content');
 						?>
-
-					<?php endwhile; ?>
+					
+				<?php endwhile; ?>
 				</div>
 				<?php the_posts_navigation(); ?>
 

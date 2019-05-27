@@ -6,6 +6,7 @@
 .site-header {
   position: absolute;
   width: 100%;
+  padding: 0.7rem 0;
   .main-navigation {
     display: flex;
     flex-direction: row;
@@ -14,14 +15,17 @@
       display: flex;
       flex-direction: row;
       .menu-menu-menu-container {
-        .menu {
-          .menu-item {
-            a {
-              padding: 0 0.2rem 0 0.2rem;
-              color: #248a83;
-              text-transform: uppercase;
-            }
-          }
+        a {
+          padding: 0 0.7rem;
+          color: #248a83;
+          text-transform: uppercase;
+          font-family: 'Novecento Sans Web', sans-serif;
+          font-size: 1rem;
+        }
+      }
+      .header-search {
+        label {
+          display: none;
         }
       }
     }
@@ -31,9 +35,9 @@
 // Home Hero Section
 .home-hero {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.35)
     ),
     url(../../assets/images/home-hero.jpg);
   background-size: cover;
@@ -327,11 +331,17 @@
   }
 }
 
-/* DO Page *Shop Page* */
-.term-do {
+/* taxonomy term links */
+.tax-product-type {
   .container {
     .page-header {
       text-align: center;
+      .page-title {
+        text-transform: uppercase;
+      }
+      p {
+        font-family: 'Merriweather Web', sans-serif;
+      }
     }
     .product {
       width: 25%;
@@ -339,7 +349,94 @@
   }
 }
 
-/* Journal Page */
+/* Journal/ Find Us page and Sidebar styling */
+.blog, .page-find-us, .single-post, .date {
+  .hfeed {
+    width: 100%;
+    .site-header {
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .site-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 1120px;
+      padding-top: 3.4rem;
+      margin: 0 auto;
+      .content-area {
+        border-right: 1px solid #e1e1e1;
+        width: 73%;
+        padding: 4rem 4rem 4rem 0;
+        article {
+          position: relative;
+          .entry-title {
+            position: absolute;
+
+          }
+          .entry-meta {
+            position: absolute;
+          }
+
+        }
+      }
+      .widget-area {
+        padding: 3rem 0 3rem 3rem;
+        width: 27%;
+        .widget_archive {
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style: none;
+              a {
+                text-decoration: none;
+                color: #248a83;
+              }
+            }
+          }
+        }
+        .widget {
+          margin-bottom: 2.5rem;
+          
+          .widget-title {
+            text-transform: uppercase;
+            color: #2f1339;
+            font-family: 'Novecento Sans Web', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15rem;
+          }
+        }
+        .sidebar-container-item {
+          a {
+            text-decoration: none;
+            color: #248a83;
+          }
+        }
+        a, span, p {
+          font-family: 'Merriweather Web', sans-serif;
+        }
+      }
+    }
+  }
+}
+
+/* Single Product Hide Sidebar */
+
+
+/* Find Us Page */
+.page-find-us {
+  .content-area {
+    .entry-title {
+      position: absolute;
+    }
+    .entry-title, h2 {
+      text-transform: uppercase;
+      color: #2f1339;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2.1rem;
+    }
+  }
+}
 
 /* About Page  */
 .page-about {
@@ -394,34 +491,31 @@
   }
 }
 
-/* Find Us Page */
 
-/* Journal/Find Us Sidebar*/
+/* Shop, Journal, Find Us page styling */
+.archive,
 .blog,
-.page-find-us {
-  .hfeed {
-    .site-header {
-      border-bottom: 1px solid #a1a1a1;
-    }
-    .site-content {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      margin: 0 7rem;
-      padding-top: 3.8rem;
-      .content-area {
-        width: 73%;
-        border-right: 1px solid #a1a1a1;
-      }
-      .widget-area {
-        width: 27%;
+.page-find-us, .single-product, .single-post {
+  .site-header {
+    border-bottom: 1px solid #e1e1e1;
+    .front-page-tent {
+      background: url(../../assets/images/logos/inhabitent-logo-tent.svg);
+      background-size: 50px 33px;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: contain;
+      width: 4rem;
+      height: 2rem;
+      img {
+        visibility: hidden;
       }
     }
   }
 }
 
+
 /* Hide Shop Sidebar widget */
-.archive {
+.archive, .single-product {
   .site-content {
     .content-area {
       .nav-previous {
@@ -442,12 +536,16 @@
       .main-navigation {
         .tent-container {
           .front-page-tent {
-            // background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg);
-            // background-size: cover;
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // object-fit: contain;
+            background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg);
+            background-size: 50px 33px;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: contain;
             width: 4rem;
+            height: 2rem;
+            img {
+              visibility: hidden;
+            }
           }
         }
         .menu-menu-menu-container {
