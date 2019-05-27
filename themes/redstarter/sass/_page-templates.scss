@@ -320,18 +320,28 @@
         .product {
           margin-top: 2rem;
           width: 24%;
+          .entry-header {
+            line-height: 0;
+          }
           .product-info {
             width: 100%;
             border: 1px solid #e1e1e1;
             border-top-width: 4px;
             display: flex;
-            padding: .4rem;
+            padding: 0.8rem;
+            line-height: normal;
             .product-title {
               white-space: nowrap;
               overflow: hidden;
+              font-family: 'Merriweather Web', sans-serif;
+              color: #2f1339;
               &:after {
                 content: '...........................................................';
+                color: #2f1339;
               }
+            }
+            .product-price {
+              font-family: 'Merriweather Web', sans-serif;
             }
           }
           img {
@@ -343,6 +353,52 @@
             display: none;
           }
         }
+      }
+    }
+  }
+}
+
+/* Journal Page */
+.blog, .single-post {
+  .post {
+    .entry-header {
+      position: relative;
+      line-height: 0;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+      .entry-title {
+        position: absolute;
+        top: 0;
+        background-color: #248a83;
+        margin: 2rem 0;
+        padding: .9rem 2rem;
+        line-height: normal;
+        max-width: 75%;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $color__background-body;
+          font-family: 'Novecento Sans Web', sans-serif;
+          font-size: 2rem;
+        }
+      }
+      .entry-meta {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #248a83;
+        line-height: normal;
+        padding: 0.7rem;
+        color: $color__background-body;
+        font-family: 'Novecento Sans Web', sans-serif;
+        text-transform: uppercase;
+      }
+    }
+    .entry-content {
+      p {
+        font-family: 'Merriweather Web', sans-serif;
       }
     }
   }
@@ -387,15 +443,6 @@
         border-right: 1px solid #e1e1e1;
         width: 73%;
         padding: 4rem 4rem 4rem 0;
-        article {
-          position: relative;
-          .entry-title {
-            position: absolute;
-          }
-          .entry-meta {
-            position: absolute;
-          }
-        }
       }
       .widget-area {
         padding: 3rem 0 3rem 3rem;

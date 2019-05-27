@@ -1064,6 +1064,8 @@ object {
     .archive .site-content .container .product-grid .product {
       margin-top: 2rem;
       width: 24%; }
+      .archive .site-content .container .product-grid .product .entry-header {
+        line-height: 0; }
       .archive .site-content .container .product-grid .product .product-info {
         width: 100%;
         border: 1px solid #e1e1e1;
@@ -1071,12 +1073,18 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding: .4rem; }
+        padding: 0.8rem;
+        line-height: normal; }
         .archive .site-content .container .product-grid .product .product-info .product-title {
           white-space: nowrap;
-          overflow: hidden; }
+          overflow: hidden;
+          font-family: 'Merriweather Web', sans-serif;
+          color: #2f1339; }
           .archive .site-content .container .product-grid .product .product-info .product-title:after {
-            content: '...........................................................'; }
+            content: '...........................................................';
+            color: #2f1339; }
+        .archive .site-content .container .product-grid .product .product-info .product-price {
+          font-family: 'Merriweather Web', sans-serif; }
       .archive .site-content .container .product-grid .product img {
         width: 19rem;
         height: 14rem;
@@ -1084,6 +1092,42 @@ object {
            object-fit: cover; }
       .archive .site-content .container .product-grid .product p {
         display: none; }
+
+/* Journal Page */
+.blog .post .entry-header, .single-post .post .entry-header {
+  position: relative;
+  line-height: 0; }
+  .blog .post .entry-header img, .single-post .post .entry-header img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%; }
+  .blog .post .entry-header .entry-title, .single-post .post .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    background-color: #248a83;
+    margin: 2rem 0;
+    padding: .9rem 2rem;
+    line-height: normal;
+    max-width: 75%; }
+    .blog .post .entry-header .entry-title a, .single-post .post .entry-header .entry-title a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2rem; }
+  .blog .post .entry-header .entry-meta, .single-post .post .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #248a83;
+    line-height: normal;
+    padding: 0.7rem;
+    color: #fff;
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase; }
+
+.blog .post .entry-content p, .single-post .post .entry-content p {
+  font-family: 'Merriweather Web', sans-serif; }
 
 /* taxonomy term links */
 .tax-product-type .container .page-header {
@@ -1131,21 +1175,6 @@ object {
       border-right: 1px solid #e1e1e1;
       width: 73%;
       padding: 4rem 4rem 4rem 0; }
-      .blog .hfeed .site-content .content-area article,
-      .page-find-us .hfeed .site-content .content-area article,
-      .single-post .hfeed .site-content .content-area article,
-      .date .hfeed .site-content .content-area article {
-        position: relative; }
-        .blog .hfeed .site-content .content-area article .entry-title,
-        .page-find-us .hfeed .site-content .content-area article .entry-title,
-        .single-post .hfeed .site-content .content-area article .entry-title,
-        .date .hfeed .site-content .content-area article .entry-title {
-          position: absolute; }
-        .blog .hfeed .site-content .content-area article .entry-meta,
-        .page-find-us .hfeed .site-content .content-area article .entry-meta,
-        .single-post .hfeed .site-content .content-area article .entry-meta,
-        .date .hfeed .site-content .content-area article .entry-meta {
-          position: absolute; }
     .blog .hfeed .site-content .widget-area,
     .page-find-us .hfeed .site-content .widget-area,
     .single-post .hfeed .site-content .widget-area,
