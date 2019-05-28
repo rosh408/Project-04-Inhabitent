@@ -724,6 +724,15 @@ object {
   position: absolute;
   width: 100%;
   padding: 0.7rem 0; }
+  .site-header .front-page-tent {
+    background: url(../../assets/images/logos/inhabitent-logo-tent.svg);
+    background-size: 50px 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 4rem;
+    height: 2rem; }
   .site-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -750,6 +759,13 @@ object {
         font-size: 1rem; }
       .site-header .main-navigation .right-side-navigation .header-search label {
         display: none; }
+      .site-header .main-navigation .right-side-navigation .header-search .search-submit {
+        background: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 0;
+        color: #248a83;
+        padding-top: 0; }
 
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.35))), url(../../assets/images/home-hero.jpg);
@@ -1106,18 +1122,21 @@ object {
 /* Journal Page */
 .blog .post .entry-header,
 .single-post .post .entry-header,
-.date .post .entry-header {
+.date .post .entry-header,
+.category-recipes .post .entry-header, .category-how-tos .post .entry-header, .category-contests .post .entry-header, .category-not-really-camping .post .entry-header {
   position: relative;
   line-height: 0; }
   .blog .post .entry-header img,
   .single-post .post .entry-header img,
-  .date .post .entry-header img {
+  .date .post .entry-header img,
+  .category-recipes .post .entry-header img, .category-how-tos .post .entry-header img, .category-contests .post .entry-header img, .category-not-really-camping .post .entry-header img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 100%; }
   .blog .post .entry-header .entry-title,
   .single-post .post .entry-header .entry-title,
-  .date .post .entry-header .entry-title {
+  .date .post .entry-header .entry-title,
+  .category-recipes .post .entry-header .entry-title, .category-how-tos .post .entry-header .entry-title, .category-contests .post .entry-header .entry-title, .category-not-really-camping .post .entry-header .entry-title {
     position: absolute;
     top: 0;
     background-color: #248a83;
@@ -1127,7 +1146,8 @@ object {
     max-width: 75%; }
     .blog .post .entry-header .entry-title a,
     .single-post .post .entry-header .entry-title a,
-    .date .post .entry-header .entry-title a {
+    .date .post .entry-header .entry-title a,
+    .category-recipes .post .entry-header .entry-title a, .category-how-tos .post .entry-header .entry-title a, .category-contests .post .entry-header .entry-title a, .category-not-really-camping .post .entry-header .entry-title a {
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
@@ -1135,7 +1155,8 @@ object {
       font-size: 2rem; }
   .blog .post .entry-header .entry-meta,
   .single-post .post .entry-header .entry-meta,
-  .date .post .entry-header .entry-meta {
+  .date .post .entry-header .entry-meta,
+  .category-recipes .post .entry-header .entry-meta, .category-how-tos .post .entry-header .entry-meta, .category-contests .post .entry-header .entry-meta, .category-not-really-camping .post .entry-header .entry-meta {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1148,7 +1169,8 @@ object {
 
 .blog .post .entry-content p,
 .single-post .post .entry-content p,
-.date .post .entry-content p {
+.date .post .entry-content p,
+.category-recipes .post .entry-content p, .category-how-tos .post .entry-content p, .category-contests .post .entry-content p, .category-not-really-camping .post .entry-content p {
   font-family: 'Merriweather Web', sans-serif; }
 
 /* taxonomy term links */
@@ -1185,7 +1207,6 @@ object {
       color: #fff;
       border: 0; }
 
-/* */
 /* Single Post page */
 .single-post .content-area .entry-title {
   color: #fff;
@@ -1226,57 +1247,45 @@ object {
 .single-post .content-area .post-navigation {
   display: none; }
 
-.single-post .content-area .comments-area .logged-in-as {
-  display: none; }
-
-.single-post .content-area .comments-area .comment-reply-title {
-  font-family: 'Novecento Sans Web', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.8rem; }
-
-.single-post .content-area .comments-area .comment-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .single-post .content-area .comments-area .comment-form .comment-form-author,
-  .single-post .content-area .comments-area .comment-form .comment-form-email {
-    width: 49%; }
-  .single-post .content-area .comments-area .comment-form .comment-form-cookies-consent {
+.single-post .content-area .comments-area {
+  border-top: 1px solid #e1e1e1; }
+  .single-post .content-area .comments-area .logged-in-as {
     display: none; }
-  .single-post .content-area .comments-area .comment-form p {
-    font-family: 'Merriweather Web', sans-serif; }
-    .single-post .content-area .comments-area .comment-form p label {
-      font-family: 'Novecento Sans Web', sans-serif;
-      text-transform: uppercase;
-      color: #2f1339; }
+  .single-post .content-area .comments-area .comment-reply-title {
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem; }
+  .single-post .content-area .comments-area .comment-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .single-post .content-area .comments-area .comment-form .comment-form-author,
+    .single-post .content-area .comments-area .comment-form .comment-form-email {
+      width: 49%; }
+    .single-post .content-area .comments-area .comment-form .comment-form-cookies-consent {
+      display: none; }
+    .single-post .content-area .comments-area .comment-form p {
+      font-family: 'Merriweather Web', sans-serif; }
+      .single-post .content-area .comments-area .comment-form p label {
+        font-family: 'Novecento Sans Web', sans-serif;
+        text-transform: uppercase;
+        color: #2f1339; }
 
-/* Journal/ Find Us page and Sidebar styling */
-.blog .hfeed,
-.page-find-us .hfeed,
-.single-post .hfeed,
-.date .hfeed,
-.error404 .hfeed,
-.search-results .hfeed {
+/* Content and Sidebar styling */
+.blog .hfeed, .page-find-us .hfeed, .single-post .hfeed, .date .hfeed, .error404 .hfeed, .search-results .hfeed, .search-no-results .hfeed,
+.category-recipes .hfeed, .category-how-tos .hfeed, .category-contests .hfeed, .category-not-really-camping .hfeed {
   width: 100%; }
-  .blog .hfeed .site-header,
-  .page-find-us .hfeed .site-header,
-  .single-post .hfeed .site-header,
-  .date .hfeed .site-header,
-  .error404 .hfeed .site-header,
-  .search-results .hfeed .site-header {
+  .blog .hfeed .site-header, .page-find-us .hfeed .site-header, .single-post .hfeed .site-header, .date .hfeed .site-header, .error404 .hfeed .site-header, .search-results .hfeed .site-header, .search-no-results .hfeed .site-header,
+  .category-recipes .hfeed .site-header, .category-how-tos .hfeed .site-header, .category-contests .hfeed .site-header, .category-not-really-camping .hfeed .site-header {
     border-bottom: 1px solid #e1e1e1; }
-  .blog .hfeed .site-content,
-  .page-find-us .hfeed .site-content,
-  .single-post .hfeed .site-content,
-  .date .hfeed .site-content,
-  .error404 .hfeed .site-content,
-  .search-results .hfeed .site-content {
+  .blog .hfeed .site-content, .page-find-us .hfeed .site-content, .single-post .hfeed .site-content, .date .hfeed .site-content, .error404 .hfeed .site-content, .search-results .hfeed .site-content, .search-no-results .hfeed .site-content,
+  .category-recipes .hfeed .site-content, .category-how-tos .hfeed .site-content, .category-contests .hfeed .site-content, .category-not-really-camping .hfeed .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1290,90 +1299,64 @@ object {
     width: 1120px;
     padding-top: 3.4rem;
     margin: 0 auto; }
-    .blog .hfeed .site-content .content-area,
-    .page-find-us .hfeed .site-content .content-area,
-    .single-post .hfeed .site-content .content-area,
-    .date .hfeed .site-content .content-area,
-    .error404 .hfeed .site-content .content-area,
-    .search-results .hfeed .site-content .content-area {
+    .blog .hfeed .site-content .content-area, .page-find-us .hfeed .site-content .content-area, .single-post .hfeed .site-content .content-area, .date .hfeed .site-content .content-area, .error404 .hfeed .site-content .content-area, .search-results .hfeed .site-content .content-area, .search-no-results .hfeed .site-content .content-area,
+    .category-recipes .hfeed .site-content .content-area, .category-how-tos .hfeed .site-content .content-area, .category-contests .hfeed .site-content .content-area, .category-not-really-camping .hfeed .site-content .content-area {
       border-right: 1px solid #e1e1e1;
       width: 73%;
       padding: 2rem 4rem 4rem 0; }
-    .blog .hfeed .site-content .widget-area,
-    .page-find-us .hfeed .site-content .widget-area,
-    .single-post .hfeed .site-content .widget-area,
-    .date .hfeed .site-content .widget-area,
-    .error404 .hfeed .site-content .widget-area,
-    .search-results .hfeed .site-content .widget-area {
+    .blog .hfeed .site-content .widget-area, .page-find-us .hfeed .site-content .widget-area, .single-post .hfeed .site-content .widget-area, .date .hfeed .site-content .widget-area, .error404 .hfeed .site-content .widget-area, .search-results .hfeed .site-content .widget-area, .search-no-results .hfeed .site-content .widget-area,
+    .category-recipes .hfeed .site-content .widget-area, .category-how-tos .hfeed .site-content .widget-area, .category-contests .hfeed .site-content .widget-area, .category-not-really-camping .hfeed .site-content .widget-area {
       padding: 3rem 0 3rem 3rem;
       width: 27%; }
-      .blog .hfeed .site-content .widget-area .widget_archive ul,
-      .page-find-us .hfeed .site-content .widget-area .widget_archive ul,
-      .single-post .hfeed .site-content .widget-area .widget_archive ul,
-      .date .hfeed .site-content .widget-area .widget_archive ul,
-      .error404 .hfeed .site-content .widget-area .widget_archive ul,
-      .search-results .hfeed .site-content .widget-area .widget_archive ul {
+      .blog .hfeed .site-content .widget-area .widget_archive ul, .page-find-us .hfeed .site-content .widget-area .widget_archive ul, .single-post .hfeed .site-content .widget-area .widget_archive ul, .date .hfeed .site-content .widget-area .widget_archive ul, .error404 .hfeed .site-content .widget-area .widget_archive ul, .search-results .hfeed .site-content .widget-area .widget_archive ul, .search-no-results .hfeed .site-content .widget-area .widget_archive ul,
+      .category-recipes .hfeed .site-content .widget-area .widget_archive ul, .category-how-tos .hfeed .site-content .widget-area .widget_archive ul, .category-contests .hfeed .site-content .widget-area .widget_archive ul, .category-not-really-camping .hfeed .site-content .widget-area .widget_archive ul {
         margin: 0;
         padding: 0; }
-        .blog .hfeed .site-content .widget-area .widget_archive ul li,
-        .page-find-us .hfeed .site-content .widget-area .widget_archive ul li,
-        .single-post .hfeed .site-content .widget-area .widget_archive ul li,
-        .date .hfeed .site-content .widget-area .widget_archive ul li,
-        .error404 .hfeed .site-content .widget-area .widget_archive ul li,
-        .search-results .hfeed .site-content .widget-area .widget_archive ul li {
+        .blog .hfeed .site-content .widget-area .widget_archive ul li, .page-find-us .hfeed .site-content .widget-area .widget_archive ul li, .single-post .hfeed .site-content .widget-area .widget_archive ul li, .date .hfeed .site-content .widget-area .widget_archive ul li, .error404 .hfeed .site-content .widget-area .widget_archive ul li, .search-results .hfeed .site-content .widget-area .widget_archive ul li, .search-no-results .hfeed .site-content .widget-area .widget_archive ul li,
+        .category-recipes .hfeed .site-content .widget-area .widget_archive ul li, .category-how-tos .hfeed .site-content .widget-area .widget_archive ul li, .category-contests .hfeed .site-content .widget-area .widget_archive ul li, .category-not-really-camping .hfeed .site-content .widget-area .widget_archive ul li {
           list-style: none; }
-          .blog .hfeed .site-content .widget-area .widget_archive ul li a,
-          .page-find-us .hfeed .site-content .widget-area .widget_archive ul li a,
-          .single-post .hfeed .site-content .widget-area .widget_archive ul li a,
-          .date .hfeed .site-content .widget-area .widget_archive ul li a,
-          .error404 .hfeed .site-content .widget-area .widget_archive ul li a,
-          .search-results .hfeed .site-content .widget-area .widget_archive ul li a {
+          .blog .hfeed .site-content .widget-area .widget_archive ul li a, .page-find-us .hfeed .site-content .widget-area .widget_archive ul li a, .single-post .hfeed .site-content .widget-area .widget_archive ul li a, .date .hfeed .site-content .widget-area .widget_archive ul li a, .error404 .hfeed .site-content .widget-area .widget_archive ul li a, .search-results .hfeed .site-content .widget-area .widget_archive ul li a, .search-no-results .hfeed .site-content .widget-area .widget_archive ul li a,
+          .category-recipes .hfeed .site-content .widget-area .widget_archive ul li a, .category-how-tos .hfeed .site-content .widget-area .widget_archive ul li a, .category-contests .hfeed .site-content .widget-area .widget_archive ul li a, .category-not-really-camping .hfeed .site-content .widget-area .widget_archive ul li a {
             text-decoration: none;
             color: #248a83; }
-      .blog .hfeed .site-content .widget-area .widget,
-      .page-find-us .hfeed .site-content .widget-area .widget,
-      .single-post .hfeed .site-content .widget-area .widget,
-      .date .hfeed .site-content .widget-area .widget,
-      .error404 .hfeed .site-content .widget-area .widget,
-      .search-results .hfeed .site-content .widget-area .widget {
+      .blog .hfeed .site-content .widget-area .widget, .page-find-us .hfeed .site-content .widget-area .widget, .single-post .hfeed .site-content .widget-area .widget, .date .hfeed .site-content .widget-area .widget, .error404 .hfeed .site-content .widget-area .widget, .search-results .hfeed .site-content .widget-area .widget, .search-no-results .hfeed .site-content .widget-area .widget,
+      .category-recipes .hfeed .site-content .widget-area .widget, .category-how-tos .hfeed .site-content .widget-area .widget, .category-contests .hfeed .site-content .widget-area .widget, .category-not-really-camping .hfeed .site-content .widget-area .widget {
         margin-bottom: 2.5rem; }
-        .blog .hfeed .site-content .widget-area .widget .widget-title,
-        .page-find-us .hfeed .site-content .widget-area .widget .widget-title,
-        .single-post .hfeed .site-content .widget-area .widget .widget-title,
-        .date .hfeed .site-content .widget-area .widget .widget-title,
-        .error404 .hfeed .site-content .widget-area .widget .widget-title,
-        .search-results .hfeed .site-content .widget-area .widget .widget-title {
+        .blog .hfeed .site-content .widget-area .widget .widget-title, .page-find-us .hfeed .site-content .widget-area .widget .widget-title, .single-post .hfeed .site-content .widget-area .widget .widget-title, .date .hfeed .site-content .widget-area .widget .widget-title, .error404 .hfeed .site-content .widget-area .widget .widget-title, .search-results .hfeed .site-content .widget-area .widget .widget-title, .search-no-results .hfeed .site-content .widget-area .widget .widget-title,
+        .category-recipes .hfeed .site-content .widget-area .widget .widget-title, .category-how-tos .hfeed .site-content .widget-area .widget .widget-title, .category-contests .hfeed .site-content .widget-area .widget .widget-title, .category-not-really-camping .hfeed .site-content .widget-area .widget .widget-title {
           text-transform: uppercase;
           color: #2f1339;
           font-family: 'Novecento Sans Web', sans-serif;
           font-size: 1.5rem;
           letter-spacing: 0.15rem; }
-      .blog .hfeed .site-content .widget-area .sidebar-container-item a,
-      .page-find-us .hfeed .site-content .widget-area .sidebar-container-item a,
-      .single-post .hfeed .site-content .widget-area .sidebar-container-item a,
-      .date .hfeed .site-content .widget-area .sidebar-container-item a,
-      .error404 .hfeed .site-content .widget-area .sidebar-container-item a,
-      .search-results .hfeed .site-content .widget-area .sidebar-container-item a {
+      .blog .hfeed .site-content .widget-area .sidebar-container-item a, .page-find-us .hfeed .site-content .widget-area .sidebar-container-item a, .single-post .hfeed .site-content .widget-area .sidebar-container-item a, .date .hfeed .site-content .widget-area .sidebar-container-item a, .error404 .hfeed .site-content .widget-area .sidebar-container-item a, .search-results .hfeed .site-content .widget-area .sidebar-container-item a, .search-no-results .hfeed .site-content .widget-area .sidebar-container-item a,
+      .category-recipes .hfeed .site-content .widget-area .sidebar-container-item a, .category-how-tos .hfeed .site-content .widget-area .sidebar-container-item a, .category-contests .hfeed .site-content .widget-area .sidebar-container-item a, .category-not-really-camping .hfeed .site-content .widget-area .sidebar-container-item a {
         text-decoration: none;
         color: #248a83; }
       .blog .hfeed .site-content .widget-area a,
       .blog .hfeed .site-content .widget-area span,
-      .blog .hfeed .site-content .widget-area p,
-      .page-find-us .hfeed .site-content .widget-area a,
+      .blog .hfeed .site-content .widget-area p, .page-find-us .hfeed .site-content .widget-area a,
       .page-find-us .hfeed .site-content .widget-area span,
-      .page-find-us .hfeed .site-content .widget-area p,
-      .single-post .hfeed .site-content .widget-area a,
+      .page-find-us .hfeed .site-content .widget-area p, .single-post .hfeed .site-content .widget-area a,
       .single-post .hfeed .site-content .widget-area span,
-      .single-post .hfeed .site-content .widget-area p,
-      .date .hfeed .site-content .widget-area a,
+      .single-post .hfeed .site-content .widget-area p, .date .hfeed .site-content .widget-area a,
       .date .hfeed .site-content .widget-area span,
-      .date .hfeed .site-content .widget-area p,
-      .error404 .hfeed .site-content .widget-area a,
+      .date .hfeed .site-content .widget-area p, .error404 .hfeed .site-content .widget-area a,
       .error404 .hfeed .site-content .widget-area span,
-      .error404 .hfeed .site-content .widget-area p,
-      .search-results .hfeed .site-content .widget-area a,
+      .error404 .hfeed .site-content .widget-area p, .search-results .hfeed .site-content .widget-area a,
       .search-results .hfeed .site-content .widget-area span,
-      .search-results .hfeed .site-content .widget-area p {
+      .search-results .hfeed .site-content .widget-area p, .search-no-results .hfeed .site-content .widget-area a,
+      .search-no-results .hfeed .site-content .widget-area span,
+      .search-no-results .hfeed .site-content .widget-area p,
+      .category-recipes .hfeed .site-content .widget-area a,
+      .category-recipes .hfeed .site-content .widget-area span,
+      .category-recipes .hfeed .site-content .widget-area p, .category-how-tos .hfeed .site-content .widget-area a,
+      .category-how-tos .hfeed .site-content .widget-area span,
+      .category-how-tos .hfeed .site-content .widget-area p, .category-contests .hfeed .site-content .widget-area a,
+      .category-contests .hfeed .site-content .widget-area span,
+      .category-contests .hfeed .site-content .widget-area p, .category-not-really-camping .hfeed .site-content .widget-area a,
+      .category-not-really-camping .hfeed .site-content .widget-area span,
+      .category-not-really-camping .hfeed .site-content .widget-area p {
         font-family: 'Merriweather Web', sans-serif; }
 
 /* Single Product Page */
@@ -1512,7 +1495,7 @@ object {
   .search-results .content-area .product .read-more a {
     text-decoration: none;
     border: 1px solid #000;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     font-family: 'Novecento Sans Web', sans-serif;
     text-transform: uppercase;
     color: #000; }
@@ -1523,6 +1506,93 @@ object {
       border: 1px solid #fff;
       background-color: #248a83; }
 
+/* Error 404 Page */
+.error404 .not-found .page-title {
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase; }
+
+.error404 .not-found .page-content p {
+  font-family: 'Merriweather Web', sans-serif; }
+
+.error404 .not-found .page-content .search-form ::-webkit-input-placeholder {
+  font-family: 'Merriweather Web', sans-serif; }
+
+.error404 .not-found .page-content .search-form ::-ms-input-placeholder {
+  font-family: 'Merriweather Web', sans-serif; }
+
+.error404 .not-found .page-content .search-form ::placeholder {
+  font-family: 'Merriweather Web', sans-serif; }
+
+.error404 .not-found .page-content .search-form .search-field {
+  padding: 6px;
+  background-color: #f4f4f4; }
+
+.error404 .not-found .page-content .search-form .search-submit {
+  border: 1px solid #fff;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .error404 .not-found .page-content .search-form .search-submit .fa-search {
+    color: #fff; }
+
+.error404 .not-found .widget-title, .error404 .not-found .widgettitle {
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #2f1339; }
+
+.error404 .not-found .widget ul {
+  margin-left: 0;
+  padding-left: 0; }
+  .error404 .not-found .widget ul li {
+    list-style: none; }
+    .error404 .not-found .widget ul li a {
+      font-family: 'Merriweather Web', sans-serif;
+      text-decoration: none;
+      color: #248a83; }
+      .error404 .not-found .widget ul li a:hover {
+        color: #2f1339; }
+
+/* Search no results page */
+.search-no-results .page-content p {
+  display: none; }
+
+.search-no-results .page-content .search-form .search-submit {
+  border: 1px solid #fff;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .search-no-results .page-content .search-form .search-submit .fa-search {
+    color: #fff; }
+
+/* Category Pages */
+.category-recipes .page-header, .category-how-tos .page-header, .category-contests .page-header, .category-not-really-camping .page-header {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1; }
+  .category-recipes .page-header .page-title, .category-how-tos .page-header .page-title, .category-contests .page-header .page-title, .category-not-really-camping .page-header .page-title {
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+
+.category-recipes .post, .category-how-tos .post, .category-contests .post, .category-not-really-camping .post {
+  margin-bottom: 4rem; }
+
+.category-recipes .entry-content .read-more a, .category-how-tos .entry-content .read-more a, .category-contests .entry-content .read-more a, .category-not-really-camping .entry-content .read-more a {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+  color: #000; }
+  .category-recipes .entry-content .read-more a:after, .category-how-tos .entry-content .read-more a:after, .category-contests .entry-content .read-more a:after, .category-not-really-camping .entry-content .read-more a:after {
+    content: '\2192'; }
+  .category-recipes .entry-content .read-more a:hover, .category-how-tos .entry-content .read-more a:hover, .category-contests .entry-content .read-more a:hover, .category-not-really-camping .entry-content .read-more a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #248a83; }
+
 /* Shop, Journal, Find Us page styling */
 .archive .site-header,
 .blog .site-header,
@@ -1530,25 +1600,6 @@ object {
 .single-product .site-header,
 .single-post .site-header {
   border-bottom: 1px solid #e1e1e1; }
-  .archive .site-header .front-page-tent,
-  .blog .site-header .front-page-tent,
-  .page-find-us .site-header .front-page-tent,
-  .single-product .site-header .front-page-tent,
-  .single-post .site-header .front-page-tent {
-    background: url(../../assets/images/logos/inhabitent-logo-tent.svg);
-    background-size: 50px 33px;
-    background-repeat: no-repeat;
-    background-position: center;
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 4rem;
-    height: 2rem; }
-    .archive .site-header .front-page-tent img,
-    .blog .site-header .front-page-tent img,
-    .page-find-us .site-header .front-page-tent img,
-    .single-product .site-header .front-page-tent img,
-    .single-post .site-header .front-page-tent img {
-      visibility: hidden; }
 
 /* Hide Shop Sidebar widget */
 .post-type-archive .site-content .content-area .nav-previous,
@@ -1570,13 +1621,19 @@ object {
      object-fit: contain;
   width: 4rem;
   height: 2rem; }
-  .page-about .hfeed .site-header .main-navigation .tent-container .front-page-tent img,
-  .home .hfeed .site-header .main-navigation .tent-container .front-page-tent img {
-    visibility: hidden; }
 
 .page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a,
 .home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a {
   color: #fff; }
+
+.page-about .hfeed .site-header .main-navigation .header-search .search-submit,
+.home .hfeed .site-header .main-navigation .header-search .search-submit {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  color: #fff;
+  padding-top: 0; }
 
 /*--------------------------------------------------------------
 # Header

@@ -19,12 +19,12 @@ get_header(); ?>
 
 			<div class="page-content">
 				<p><?php echo esc_html('It looks like nothing was found at this location. Maybe try one of the links below or a search?'); ?></p>
-
-				<?php get_search_form(); ?>
+				
+				<?php get_search_form();?>
 
 				<?php the_widget('WP_Widget_Recent_Posts'); ?>
 
-				<?php if (red_starter_categorized_blog()) : 
+				<?php if (red_starter_categorized_blog()) :
 					?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html('Most Used Categories'); ?></h2>
