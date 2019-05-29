@@ -56,8 +56,8 @@ get_header(); ?>
 						<li class="journal-post-item">
 							<a class="post-thumbnail" href="<?php echo get_the_permalink(); ?>">
 								<img src="<?php the_post_thumbnail('large'); ?>
-						    												</a>
-						    											<div class=" journal-post-text">
+						    													</a>
+						    												<div class=" journal-post-text">
 								<p class="date-comment"> <?php echo get_the_date(); ?> | <?php echo get_comments_number(); ?> Comments </p>
 								<h3><?php the_title(); ?></h3>
 								<a class=" read-more" href="<?php echo get_the_permalink(); ?> "> Read Entry</a>
@@ -72,7 +72,7 @@ get_header(); ?>
 <section class="latest-adventures">
 	<h2 class="section-title">Latest Adventures</h2>
 	<ul>
-		<li class="article-box1 ">
+		<li class="article-box1">
 			<div class="article-photo">
 				<div class="article-info">
 					<h2>
@@ -82,32 +82,32 @@ get_header(); ?>
 				</div>
 			</div>
 		</li>
-		<li class="article-box2 ">
+		<li class="article-box2">
 			<div class="article-photo">
 				<div class="article-info">
-					</h2>
-					A Night with Friends at the Beach
+					<h2>
+						A night with friends at the beach
 					</h2>
 					<button>Read More</button>
 				</div>
 			</div>
 		</li>
-		<li class="article-box3 ">
+		<li class="article-box3">
 			<div class="article-photo">
+				<div class="article-info">
+					<h2>
+						Stargazing at the night
+					</h2>
+					<button>Read More</button>
+				</div>
+			</div>
+		</li>
+		<li class="article-box4">
+			<div class="article-photo">
+				<div class="article-info">
+					<h2>
 
-				<div class="article-info">
-					</h2>
-					Taking in the View at Big Mountain
-					</h2>
-					<button>Read More</button>
-				</div>
-			</div>
-		</li>
-		<li class="article-box4 ">
-			<div class="article-photo">
-				<div class="article-info">
-					</h2>
-					Star-gazing at the Night Sky
+						Taking in the view at big mountain
 					</h2>
 					<button>Read More</button>
 				</div>

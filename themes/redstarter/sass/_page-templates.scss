@@ -230,12 +230,12 @@
 
 /* Latest Adventures Section */
 .latest-adventures {
-  width: 95%;
+  width: 80%;
   margin: auto auto 7rem;
   .section-title {
     text-align: center;
-    font-family: 'Novocento Sans Web', sans-serif;
-    font-size: 3rem;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 2.6rem;
     font-weight: lighter;
     text-transform: uppercase;
     color: #2f1339;
@@ -249,42 +249,126 @@
     padding-left: 0;
     width: 100%;
     height: 60vh;
+    li {
+      .article-info {
+        h2 {
+          font-family: 'Novecento Sans Web', sans-serif;
+          text-transform: uppercase;
+          color: $color__background-body;
+          margin-left: 2rem;
+          margin-right: 2rem;
+          background-color: transparent;
+        }
+        button {
+          font-family: 'Novecento Sans Web', sans-serif;
+          background: transparent;
+          box-shadow: none;
+          border: 1px solid #fff;
+          border-radius: 0;
+          text-transform: uppercase;
+          color: $color__background-body;
+          &:hover {
+            background-color: #1b6964;
+            border: none;
+          }
+        }
+      }
+    }
     .article-box1 {
       list-style: none;
-      background: url(../../assets/images/adventure-photos/canoe-girl.jpg)
-        no-repeat;
-      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../../assets/images/adventure-photos/canoe-girl.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+      background-position: center, center;
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
+      position: relative;
+      button {
+        position: absolute;
+        margin-left: 2rem;
+        padding: 1rem 1.5rem;
+      }
+      .article-info {
+        h2 {
+          font-size: 3rem;
+        }
+      }
     }
     .article-box2 {
       list-style: none;
-      background: url(../../assets/images/adventure-photos/beach-bonfire.jpg)
-        no-repeat;
-      background-size: cover;
-      background-position: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../../assets/images/adventure-photos/beach-bonfire.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+      background-position: center, center;
       grid-column: 3 / span 2;
       grid-row: 1 / span 1;
+      position: relative;
+      button {
+        position: absolute;
+        margin-left: 2rem;
+        padding: 1rem 1.5rem;
+      }
+      .article-info {
+        h2 {
+          font-size: 2.2rem;
+        }
+      }
     }
     .article-box3 {
       list-style: none;
-      background: url(../../assets/images/adventure-photos/night-sky.jpg)
-        no-repeat;
-      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../../assets/images/adventure-photos/night-sky.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+      background-position: center, center;
+      position: relative;
+      button {
+        position: absolute;
+        margin-left: 2rem;
+        padding: 1rem 1.5rem;
+      }
+      .article-info {
+        h2 {
+          font-size: 1.75rem;
+        }
+      }
     }
     .article-box4 {
       list-style: none;
-      background: url(../../assets/images/adventure-photos/mountain-hikers.jpg)
-        no-repeat;
-      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../../assets/images/adventure-photos/mountain-hikers.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+      background-position: center, center;
+      position: relative;
+      button {
+        position: absolute;
+        margin-left: 2rem;
+        padding: 1rem 1.5rem;
+      }
+      .article-info {
+        margin-top: 0.5rem;
+        margin-bottom: 0.15rem;
+        h2 {
+          font-size: 1.70rem;
+        }
+      }
     }
   }
   .more-adventures {
+    margin-top: 3rem;
     a {
-      padding: 2rem 3rem;
+      padding: 1rem 2rem;
       text-decoration: none;
-    border: 1px solid #000;
-font-family: 'Novecento Sans Web', sans-serif;
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: uppercase;
+      background-color: #248a83;
+      color: $color__background-body;
+      &:hover {
+        background-color: #1b6964;
+      }
     }
   }
 }
