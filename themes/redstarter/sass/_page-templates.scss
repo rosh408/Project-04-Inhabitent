@@ -33,8 +33,26 @@
         }
       }
       .header-search {
-        label {
-          display: none;
+        .after-click {
+          width: 200px !important;
+          &:focus {
+            outline: none;
+          }
+        }
+        #search-label {
+          width: 0;
+          background: none;
+          transition: 0.5s ease-in-out;
+          border: none;
+          &::placeholder {
+            color: rgba(217, 144, 84, 0.9);
+            font-family: 'Novecento Sans Web', sans-serif;
+            text-transform: uppercase;
+          }
+        }
+        .icon-search {
+          padding: 20;
+          color: $color__background-body;
         }
         .search-submit {
           background: transparent;
@@ -390,8 +408,11 @@
 /* Journal Page */
 .blog,
 .single-post,
-.date, 
-.category-recipes, .category-how-tos, .category-contests, .category-not-really-camping {
+.date,
+.category-recipes,
+.category-how-tos,
+.category-contests,
+.category-not-really-camping {
   .post {
     .entry-header {
       position: relative;
@@ -443,9 +464,12 @@
       text-align: center;
       .page-title {
         text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 2rem;
       }
       p {
         font-family: 'Merriweather Web', sans-serif;
+        margin-top: 0;
       }
     }
     .product {
@@ -567,9 +591,17 @@
 }
 
 /* Content and Sidebar styling */
-.blog, .page-find-us, .single-post, .date, .error404, .search-results, .search-no-results,
-.category-recipes, .category-how-tos, .category-contests, .category-not-really-camping
-{
+.blog,
+.page-find-us,
+.single-post,
+.date,
+.error404,
+.search-results,
+.search-no-results,
+.category-recipes,
+.category-how-tos,
+.category-contests,
+.category-not-really-camping {
   .hfeed {
     width: 100%;
     .site-header {
@@ -857,7 +889,8 @@
         }
       }
     }
-    .widget-title, .widgettitle {
+    .widget-title,
+    .widgettitle {
       font-family: 'Novecento Sans Web', sans-serif;
       font-size: 1.7rem;
       text-transform: uppercase;
@@ -879,7 +912,6 @@
           }
         }
       }
-      
     }
   }
 }
@@ -904,7 +936,10 @@
 }
 
 /* Category Pages */
-.category-recipes, .category-how-tos, .category-contests, .category-not-really-camping {
+.category-recipes,
+.category-how-tos,
+.category-contests,
+.category-not-really-camping {
   .page-header {
     margin-bottom: 3rem;
     padding-bottom: 1rem;
@@ -940,13 +975,27 @@
   }
 }
 
+/* Archive Pages */
+.date {
+  .page-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+    .page-title {
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
 /* Shop, Journal, Find Us page styling */
 .archive,
 .blog,
 .page-find-us,
 .single-product,
 .single-post {
-  .site-header {  
+  .site-header {
     border-bottom: 1px solid #e1e1e1;
   }
 }

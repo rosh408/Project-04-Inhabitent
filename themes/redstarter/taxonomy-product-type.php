@@ -24,21 +24,7 @@ get_header(); ?>
 						)
 					);
 					?>
-					<ul class="product-terms">
-						<?php
-						foreach ($terms as $term) :
-							?>
-							<li class="product-term">
-								<p class="term-stuff">
-									<a href="<?php echo get_term_link($term); ?>">
-										<?php echo $term->name; ?>
-									</a>
-								</p>
-							</li>
-						<?php
-					endforeach;
-					?>
-					</ul> <!-- end of .product-terms-->
+				
 				</header><!-- .page-header -->
 
 				<?php /* Start the Loop */ ?>
