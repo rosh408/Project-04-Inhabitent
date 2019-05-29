@@ -267,8 +267,9 @@
           border-radius: 0;
           text-transform: uppercase;
           color: $color__background-body;
+          font-weight: lighter;
           &:hover {
-            background-color: #1b6964;
+            background-color: #248a83;
             border: none;
           }
         }
@@ -313,6 +314,7 @@
       .article-info {
         h2 {
           font-size: 2.2rem;
+          margin-bottom: .4rem;
         }
       }
     }
@@ -353,6 +355,7 @@
         margin-bottom: 0.15rem;
         h2 {
           font-size: 1.70rem;
+          margin-bottom: .5rem;
         }
       }
     }
@@ -999,6 +1002,22 @@
             background-color: #248a83;
           }
         }
+      }
+    }
+    .search-pagination {
+      margin-top: 0;
+     span, a {
+        border: 1px solid #fff;
+        padding: .6rem 1.2rem;
+        background-color: #248a83;
+        text-transform: uppercase;
+        color: $color__background-body;
+        &:hover {
+          background-color: #2f1339;
+        }
+      }
+      a {
+        text-decoration: none;
       }
     }
   }

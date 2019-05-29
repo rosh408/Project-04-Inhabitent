@@ -998,9 +998,10 @@ object {
       border: 1px solid #fff;
       border-radius: 0;
       text-transform: uppercase;
-      color: #fff; }
+      color: #fff;
+      font-weight: lighter; }
       .latest-adventures ul li .article-info button:hover {
-        background-color: #1b6964;
+        background-color: #248a83;
         border: none; }
     .latest-adventures ul .article-box1 {
       list-style: none;
@@ -1033,7 +1034,8 @@ object {
         margin-left: 2rem;
         padding: 1rem 1.5rem; }
       .latest-adventures ul .article-box2 .article-info h2 {
-        font-size: 2.2rem; }
+        font-size: 2.2rem;
+        margin-bottom: .4rem; }
     .latest-adventures ul .article-box3 {
       list-style: none;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../assets/images/adventure-photos/night-sky.jpg);
@@ -1064,7 +1066,8 @@ object {
         margin-top: 0.5rem;
         margin-bottom: 0.15rem; }
         .latest-adventures ul .article-box4 .article-info h2 {
-          font-size: 1.70rem; }
+          font-size: 1.70rem;
+          margin-bottom: .5rem; }
   .latest-adventures .more-adventures {
     margin-top: 3rem; }
     .latest-adventures .more-adventures a {
@@ -1772,6 +1775,19 @@ object {
       color: #fff;
       border: 1px solid #fff;
       background-color: #248a83; }
+
+.search-results .content-area .search-pagination {
+  margin-top: 0; }
+  .search-results .content-area .search-pagination span, .search-results .content-area .search-pagination a {
+    border: 1px solid #fff;
+    padding: .6rem 1.2rem;
+    background-color: #248a83;
+    text-transform: uppercase;
+    color: #fff; }
+    .search-results .content-area .search-pagination span:hover, .search-results .content-area .search-pagination a:hover {
+      background-color: #2f1339; }
+  .search-results .content-area .search-pagination a {
+    text-decoration: none; }
 
 /* Error 404 Page */
 .error404 .not-found .page-title {
