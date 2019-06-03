@@ -29,9 +29,9 @@ get_header(); ?>
 						<p class="product-price"><?php echo "$", CFS()->get('product_price'); ?></p>
 						<div class="product-descrip"><?php the_content(); ?></div>
 						<div class="social-buttons">
-							<button><i class="fab fa-facebook-f"></i>&nbsp Like</button>
-							<button><i class="fab fa-twitter"></i>&nbsp Tweet</button>
-							<button><i class="fab fa-pinterest"></i>&nbsp Pin</button>
+							<button><i class="fab fa-facebook-f"></i>&nbsp; Like</button>
+							<button><i class="fab fa-twitter"></i>&nbsp; Tweet</button>
+							<button><i class="fab fa-pinterest"></i>&nbsp; Pin</button>
 						</div>
 					</div><!-- .entry-content -->
 

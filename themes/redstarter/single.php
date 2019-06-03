@@ -38,9 +38,9 @@ get_header(); ?>
 				<footer class="entry-footer">
 					<?php red_starter_entry_footer(); ?>
 					<div class="social-buttons">
-							<button><i class="fab fa-facebook-f"></i>&nbsp Like</button>
-							<button><i class="fab fa-twitter"></i>&nbsp Tweet</button>
-							<button><i class="fab fa-pinterest"></i>&nbsp Pin</button>
+							<button><i class="fab fa-facebook-f"></i>&nbsp; Like</button>
+							<button><i class="fab fa-twitter"></i>&nbsp; Tweet</button>
+							<button><i class="fab fa-pinterest"></i>&nbsp; Pin</button>
 						</div>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->

@@ -32,7 +32,7 @@ get_header(); ?>
 
 					<div class="entry-summary">
 						<?php the_excerpt(); ?>
-						<p class="read-more"><a href="<?php echo get_the_permalink(); ?>">Read More &nbsp </a></p>
+						<p class="read-more"><a href="<?php echo get_the_permalink(); ?>">Read More &nbsp; </a></p>
 					</div><!-- .entry-summary -->
 				</article><!-- #post-## -->
 

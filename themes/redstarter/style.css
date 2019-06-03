@@ -234,22 +234,22 @@ th {
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/");
-  src: url("../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/");
+  src: url("../../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/");
-  src: url("../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/");
+  src: url("../../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/");
-  src: url("../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/");
+  src: url("../../assets/fonts/Merriweather/fonts/?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
@@ -470,7 +470,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248a83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -758,6 +758,8 @@ object {
         text-transform: uppercase;
         font-family: 'Novecento Sans Web', sans-serif;
         font-size: 1rem; }
+        .site-header .main-navigation .right-side-navigation .menu-menu-menu-container a:hover {
+          color: #2f1339; }
       .site-header .main-navigation .right-side-navigation .header-search .after-click {
         width: 200px !important; }
         .site-header .main-navigation .right-side-navigation .header-search .after-click:focus {
@@ -784,8 +786,7 @@ object {
       .site-header .main-navigation .right-side-navigation .header-search .search-field::placeholder {
         color: #808080; }
       .site-header .main-navigation .right-side-navigation .header-search .icon-search {
-        padding: 20;
-        color: #248a83; }
+        padding: 20; }
       .site-header .main-navigation .right-side-navigation .header-search .search-submit {
         background: transparent;
         -webkit-box-shadow: none;
@@ -983,24 +984,26 @@ object {
     padding-left: 0;
     width: 100%;
     height: 60vh; }
-    .latest-adventures ul li .article-info h2 {
-      font-family: 'Novecento Sans Web', sans-serif;
-      text-transform: uppercase;
+    .latest-adventures ul article .article-info h2 {
+      font-family: 'Merriweather Web', sans-serif;
+      font-weight: lighter;
       color: #fff;
       margin-left: 2rem;
       margin-right: 2rem;
       background-color: transparent; }
-    .latest-adventures ul li .article-info button {
+    .latest-adventures ul article .article-info button {
       font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 0.9rem;
       background: transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
+      text-shadow: none;
       border: 1px solid #fff;
       border-radius: 0;
       text-transform: uppercase;
       color: #fff;
       font-weight: lighter; }
-      .latest-adventures ul li .article-info button:hover {
+      .latest-adventures ul article .article-info button:hover {
         background-color: #248a83;
         border: none; }
     .latest-adventures ul .article-box1 {
@@ -1035,7 +1038,7 @@ object {
         padding: 1rem 1.5rem; }
       .latest-adventures ul .article-box2 .article-info h2 {
         font-size: 2.2rem;
-        margin-bottom: .4rem; }
+        margin-bottom: 0.4rem; }
     .latest-adventures ul .article-box3 {
       list-style: none;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../assets/images/adventure-photos/night-sky.jpg);
@@ -1066,8 +1069,8 @@ object {
         margin-top: 0.5rem;
         margin-bottom: 0.15rem; }
         .latest-adventures ul .article-box4 .article-info h2 {
-          font-size: 1.70rem;
-          margin-bottom: .5rem; }
+          font-size: 1.7rem;
+          margin-bottom: 0.5rem; }
   .latest-adventures .more-adventures {
     margin-top: 3rem; }
     .latest-adventures .more-adventures a {
@@ -1172,7 +1175,9 @@ object {
           -ms-flex-pack: center;
               justify-content: center; }
       .site-footer .site-info .website-copyright p {
-        color: #fff; }
+        color: #fff;
+        font-family: 'Novecento Sans Web', sans-serif;
+        text-transform: uppercase; }
 
 /* Shop Page */
 .archive .site-content .container {
@@ -1778,13 +1783,15 @@ object {
 
 .search-results .content-area .search-pagination {
   margin-top: 0; }
-  .search-results .content-area .search-pagination span, .search-results .content-area .search-pagination a {
+  .search-results .content-area .search-pagination span,
+  .search-results .content-area .search-pagination a {
     border: 1px solid #fff;
-    padding: .6rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     background-color: #248a83;
     text-transform: uppercase;
     color: #fff; }
-    .search-results .content-area .search-pagination span:hover, .search-results .content-area .search-pagination a:hover {
+    .search-results .content-area .search-pagination span:hover,
+    .search-results .content-area .search-pagination a:hover {
       background-color: #2f1339; }
   .search-results .content-area .search-pagination a {
     text-decoration: none; }
@@ -1937,6 +1944,9 @@ object {
 .page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a,
 .home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a {
   color: #fff; }
+  .page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a:hover,
+  .home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a:hover {
+    color: #d8a57b; }
 
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::-webkit-input-placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::-webkit-input-placeholder {
@@ -1949,19 +1959,6 @@ object {
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::placeholder {
   color: #d99054; }
-
-.page-about .hfeed .site-header .main-navigation .header-search .search-submit,
-.home .hfeed .site-header .main-navigation .header-search .search-submit {
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 0;
-  color: #fff;
-  padding-top: 0; }
-
-.page-about .hfeed .site-header .main-navigation .header-search .icon-search,
-.home .hfeed .site-header .main-navigation .header-search .icon-search {
-  color: #fff; }
 
 /*--------------------------------------------------------------
 # Header

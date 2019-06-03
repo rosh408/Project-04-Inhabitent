@@ -36,8 +36,8 @@ get_header(); ?>
 									<a href="<?php echo get_the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
 								<?php endif; ?>
 								<div class="product-info">
-									<div class="product-title"><?php the_title(); ?>&nbsp</div>
-									<div class="product-price">&nbsp<?php echo "$", CFS()->get('product_price'); ?></div>
+									<div class="product-title"><?php the_title(); ?>&nbsp;</div>
+									<div class="product-price">&nbsp;<?php echo "$", CFS()->get('product_price'); ?></div>
 								</div>
 							</header><!-- .entry-header -->
 
