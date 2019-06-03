@@ -52,21 +52,33 @@
             text-transform: uppercase;
           }
         }
-        .search-field {
-          &::placeholder {
-            color: #808080;
+        fieldset {
+          border: none;
+          margin: 0;
+          padding: 0;
+          line-height: normal;
+          .icon-search {
+            padding: 20;
+            color: #248a83;
+            padding-left: 0.4rem;
+            cursor: pointer;
           }
-        }
-
-        .icon-search {
-          padding: 20;
-        }
-        .search-submit {
-          background: transparent;
-          box-shadow: none;
-          border: 0;
-          color: #248a83;
-          padding-top: 0;
+          .search-field {
+            &::placeholder {
+              color: #808080;
+            }
+            &::focus {
+              outline: none;
+            }
+          }
+          input[type='search'] {
+            color: #000;
+            text-transform: uppercase;
+            font-family: 'Novecento Sans Web', sans-serif;
+            &::focus {
+              outline: none;
+            }
+          }
         }
       }
     }
@@ -950,6 +962,7 @@
                 margin-top: 2rem;
                 margin-bottom: 1.2rem;
                 font-size: 2rem;
+                text-transform: uppercase;
               }
               p {
                 font-family: 'Merriweather web', sans-serif;
@@ -1219,6 +1232,13 @@
             &::placeholder {
               color: rgba(217, 144, 84, 1);
             }
+          }
+          input[type='search'] {
+            color: #fff;
+          }
+          .icon-search {
+            color: #fff;
+            text-shadow: none;
           }
         }
       }

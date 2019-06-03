@@ -441,7 +441,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -450,7 +449,6 @@ textarea {
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   textarea:focus {
     color: #111; }
 
@@ -779,21 +777,30 @@ object {
         .site-header .main-navigation .right-side-navigation .header-search #search-label::placeholder {
           font-family: 'Novecento Sans Web', sans-serif;
           text-transform: uppercase; }
-      .site-header .main-navigation .right-side-navigation .header-search .search-field::-webkit-input-placeholder {
-        color: #808080; }
-      .site-header .main-navigation .right-side-navigation .header-search .search-field::-ms-input-placeholder {
-        color: #808080; }
-      .site-header .main-navigation .right-side-navigation .header-search .search-field::placeholder {
-        color: #808080; }
-      .site-header .main-navigation .right-side-navigation .header-search .icon-search {
-        padding: 20; }
-      .site-header .main-navigation .right-side-navigation .header-search .search-submit {
-        background: transparent;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        border: 0;
-        color: #248a83;
-        padding-top: 0; }
+      .site-header .main-navigation .right-side-navigation .header-search fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        line-height: normal; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset .icon-search {
+          padding: 20;
+          color: #248a83;
+          padding-left: 0.4rem;
+          cursor: pointer; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset .search-field::-webkit-input-placeholder {
+          color: #808080; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset .search-field::-ms-input-placeholder {
+          color: #808080; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset .search-field::placeholder {
+          color: #808080; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset .search-field::focus {
+          outline: none; }
+        .site-header .main-navigation .right-side-navigation .header-search fieldset input[type='search'] {
+          color: #000;
+          text-transform: uppercase;
+          font-family: 'Novecento Sans Web', sans-serif; }
+          .site-header .main-navigation .right-side-navigation .header-search fieldset input[type='search']::focus {
+            outline: none; }
 
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.35))), url(../../assets/images/home-hero.jpg);
@@ -1737,7 +1744,8 @@ object {
     color: #2f1339;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-transform: uppercase; }
   .page-about .hfeed .site-content .content-area .site-main article .entry-content p {
     font-family: 'Merriweather web', sans-serif;
     margin-top: 1.6rem;
@@ -1959,6 +1967,15 @@ object {
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::placeholder {
   color: #d99054; }
+
+.page-about .hfeed .site-header .main-navigation .header-search input[type='search'],
+.home .hfeed .site-header .main-navigation .header-search input[type='search'] {
+  color: #fff; }
+
+.page-about .hfeed .site-header .main-navigation .header-search .icon-search,
+.home .hfeed .site-header .main-navigation .header-search .icon-search {
+  color: #fff;
+  text-shadow: none; }
 
 /*--------------------------------------------------------------
 # Header
