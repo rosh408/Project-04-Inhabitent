@@ -925,9 +925,17 @@
           background-color: #248a83;
           text-shadow: none;
         }
-        input[type="text"],input[type="email"],textarea {
+        input[type="Submit"]{
+          font-family: 'Novecento Sans Web', sans-serif;
+          font-size: .9rem;
+          text-transform: uppercase;
+          padding: .8rem 1.3rem;
+        }
+        input[type='text'],
+        input[type='email'],
+        textarea {
           background-color: #f4f4f4;
-          font-family: 'Merriweather Web', sans-serif;  
+          font-family: 'Merriweather Web', sans-serif;
         }
       }
     }
@@ -1008,7 +1016,9 @@
         }
       }
     }
-    .product, .type-page, .type-post {
+    .product,
+    .type-page,
+    .type-post {
       margin: 2rem 0 3rem 0;
       .read-more {
         a {
@@ -1062,8 +1072,13 @@
         font-family: 'Merriweather Web', sans-serif;
       }
       .search-form {
+        fieldset {
+          border: none;
         ::placeholder {
           font-family: 'Merriweather Web', sans-serif;
+        }
+        input[type="search"] {
+          border: 1px solid #e1e1e1;
         }
         .search-field {
           padding: 6px;
@@ -1077,6 +1092,7 @@
             color: $color__background-body;
           }
         }
+      }
       }
     }
     .widget-title,
@@ -1113,12 +1129,24 @@
       display: none;
     }
     .search-form {
-      .search-submit {
-        border: 1px solid #fff;
-        background-color: transparent;
-        box-shadow: none;
-        .fa-search {
-          color: $color__background-body;
+      fieldset {
+        border: none;
+        .icon-search {
+          display: none;
+          .fa-search {
+            color: $color__background-body;
+          }
+        }
+        input {
+          font-family: 'Merriweather Web', sans-serif;
+        }
+        input[type='search'] {
+          background-color: #f4f4f4;
+          border: 1px solid #e1e1e1;
+          padding: 0.4rem 0.5rem;
+        }
+        input::placeholder {
+          font-family: 'Merriweather Web', sans-serif;
         }
       }
     }

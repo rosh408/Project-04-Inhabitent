@@ -66,7 +66,6 @@ function hwl_home_pagesize($query)
 
 	if (is_post_type_archive('product')) {
 		$query->set('posts_per_page', 16);
-		// add alphabetical type posts
 		$query->set( 'orderby', 'title' );
         $query->set( 'order', 'ASC' );
 		return;

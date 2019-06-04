@@ -1722,7 +1722,15 @@ object {
   background-color: #248a83;
   text-shadow: none; }
 
-.page-find-us .content-area .entry-content .wpcf7-form input[type="text"], .page-find-us .content-area .entry-content .wpcf7-form input[type="email"], .page-find-us .content-area .entry-content .wpcf7-form textarea {
+.page-find-us .content-area .entry-content .wpcf7-form input[type="Submit"] {
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: .9rem;
+  text-transform: uppercase;
+  padding: .8rem 1.3rem; }
+
+.page-find-us .content-area .entry-content .wpcf7-form input[type='text'],
+.page-find-us .content-area .entry-content .wpcf7-form input[type='email'],
+.page-find-us .content-area .entry-content .wpcf7-form textarea {
   background-color: #f4f4f4;
   font-family: 'Merriweather Web', sans-serif; }
 
@@ -1778,18 +1786,26 @@ object {
     .search-results .content-area .entry-title a:hover {
       color: #2f1339; }
 
-.search-results .content-area .product, .search-results .content-area .type-page, .search-results .content-area .type-post {
+.search-results .content-area .product,
+.search-results .content-area .type-page,
+.search-results .content-area .type-post {
   margin: 2rem 0 3rem 0; }
-  .search-results .content-area .product .read-more a, .search-results .content-area .type-page .read-more a, .search-results .content-area .type-post .read-more a {
+  .search-results .content-area .product .read-more a,
+  .search-results .content-area .type-page .read-more a,
+  .search-results .content-area .type-post .read-more a {
     text-decoration: none;
     border: 1px solid #000;
     padding: 0.75rem 1.5rem;
     font-family: 'Novecento Sans Web', sans-serif;
     text-transform: uppercase;
     color: #000; }
-    .search-results .content-area .product .read-more a:after, .search-results .content-area .type-page .read-more a:after, .search-results .content-area .type-post .read-more a:after {
+    .search-results .content-area .product .read-more a:after,
+    .search-results .content-area .type-page .read-more a:after,
+    .search-results .content-area .type-post .read-more a:after {
       content: '\2192'; }
-    .search-results .content-area .product .read-more a:hover, .search-results .content-area .type-page .read-more a:hover, .search-results .content-area .type-post .read-more a:hover {
+    .search-results .content-area .product .read-more a:hover,
+    .search-results .content-area .type-page .read-more a:hover,
+    .search-results .content-area .type-post .read-more a:hover {
       color: #fff;
       border: 1px solid #fff;
       background-color: #248a83; }
@@ -1818,26 +1834,26 @@ object {
 .error404 .not-found .page-content p {
   font-family: 'Merriweather Web', sans-serif; }
 
-.error404 .not-found .page-content .search-form ::-webkit-input-placeholder {
-  font-family: 'Merriweather Web', sans-serif; }
-
-.error404 .not-found .page-content .search-form ::-ms-input-placeholder {
-  font-family: 'Merriweather Web', sans-serif; }
-
-.error404 .not-found .page-content .search-form ::placeholder {
-  font-family: 'Merriweather Web', sans-serif; }
-
-.error404 .not-found .page-content .search-form .search-field {
-  padding: 6px;
-  background-color: #f4f4f4; }
-
-.error404 .not-found .page-content .search-form .search-submit {
-  border: 1px solid #fff;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-  .error404 .not-found .page-content .search-form .search-submit .fa-search {
-    color: #fff; }
+.error404 .not-found .page-content .search-form fieldset {
+  border: none; }
+  .error404 .not-found .page-content .search-form fieldset ::-webkit-input-placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
+  .error404 .not-found .page-content .search-form fieldset ::-ms-input-placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
+  .error404 .not-found .page-content .search-form fieldset ::placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
+  .error404 .not-found .page-content .search-form fieldset input[type="search"] {
+    border: 1px solid #e1e1e1; }
+  .error404 .not-found .page-content .search-form fieldset .search-field {
+    padding: 6px;
+    background-color: #f4f4f4; }
+  .error404 .not-found .page-content .search-form fieldset .search-submit {
+    border: 1px solid #fff;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .error404 .not-found .page-content .search-form fieldset .search-submit .fa-search {
+      color: #fff; }
 
 .error404 .not-found .widget-title,
 .error404 .not-found .widgettitle {
@@ -1862,13 +1878,24 @@ object {
 .search-no-results .page-content p {
   display: none; }
 
-.search-no-results .page-content .search-form .search-submit {
-  border: 1px solid #fff;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-  .search-no-results .page-content .search-form .search-submit .fa-search {
-    color: #fff; }
+.search-no-results .page-content .search-form fieldset {
+  border: none; }
+  .search-no-results .page-content .search-form fieldset .icon-search {
+    display: none; }
+    .search-no-results .page-content .search-form fieldset .icon-search .fa-search {
+      color: #fff; }
+  .search-no-results .page-content .search-form fieldset input {
+    font-family: 'Merriweather Web', sans-serif; }
+  .search-no-results .page-content .search-form fieldset input[type='search'] {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    padding: 0.4rem 0.5rem; }
+  .search-no-results .page-content .search-form fieldset input::-webkit-input-placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
+  .search-no-results .page-content .search-form fieldset input::-ms-input-placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
+  .search-no-results .page-content .search-form fieldset input::placeholder {
+    font-family: 'Merriweather Web', sans-serif; }
 
 /* Category Pages */
 .category-recipes .page-header,

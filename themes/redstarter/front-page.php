@@ -26,9 +26,9 @@ get_header(); ?>
 					?>
 					<li class="product-term">
 						<img alt="product type icons" src="<?php echo get_template_directory_uri() .
-										'/assets/images/product-type-icons/' .
-										$term->slug . '.svg'
-									?>" />
+																'/assets/images/product-type-icons/' .
+																$term->slug . '.svg'
+															?>" />
 						<p class="term-description"><?php echo $term->description; ?></p>
 						<p class="term-stuff">
 							<a href="<?php echo get_term_link($term); ?>">
@@ -44,11 +44,10 @@ get_header(); ?>
 
 		<!-- Journal Section -->
 		<section class="inhabitent-journal">
-			<h2>Inhabitent Jornal</h2>
-			<!-- loop with get posts -->
+			<h2>Inhabitent Journal</h2>
 			<?php
 			$args = array('post_type' => 'post', 'posts_per_page' => 3);
-			$journal_posts = get_posts($args); // returns an array of posts
+			$journal_posts = get_posts($args);
 			?>
 			<div class="journal-container">
 				<ul class="journal-post-content">
@@ -56,13 +55,13 @@ get_header(); ?>
 						<article class="journal-post-item">
 							<a class="post-thumbnail" href="<?php echo get_the_permalink(); ?>">
 								<img alt="inhabitent journal photo" src="<?php the_post_thumbnail('large'); ?>
-						    													</a>
-						    												<div class=" journal-post-text">
+						    														</a>
+						    													<div class=" journal-post-text">
 								<p class="date-comment"> <?php echo get_the_date(); ?> | <?php echo get_comments_number(); ?> Comments </p>
 								<h3><?php the_title(); ?></h3>
 								<a class=" read-more" href="<?php echo get_the_permalink(); ?> "> Read Entry</a>
 				</div>
-		</article>
+				</article>
 			<?php endforeach;
 		wp_reset_postdata(); ?>
 			</ul>
