@@ -923,6 +923,11 @@
           border-radius: 0;
           box-shadow: none;
           background-color: #248a83;
+          text-shadow: none;
+        }
+        input[type="text"],input[type="email"],textarea {
+          background-color: #f4f4f4;
+          font-family: 'Merriweather Web', sans-serif;  
         }
       }
     }
@@ -1003,7 +1008,7 @@
         }
       }
     }
-    .product {
+    .product, .type-page, .type-post {
       margin: 2rem 0 3rem 0;
       .read-more {
         a {
