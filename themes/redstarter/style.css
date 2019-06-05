@@ -1231,6 +1231,8 @@ object {
           text-transform: uppercase;
           color: #248a83;
           font-size: 1.2rem; }
+          .archive .site-content .container .page-header .product-terms li a:hover {
+            color: #2f1339; }
   .archive .site-content .container .product-grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1444,15 +1446,21 @@ object {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .single-post .content-area .comments-area .comment-form textarea, .single-post .content-area .comments-area .comment-form input {
+      font-family: 'Merriweather Web', sans-serif; }
     .single-post .content-area .comments-area .comment-form .required {
       color: #d99054; }
     .single-post .content-area .comments-area .comment-form .comment-form-author,
-    .single-post .content-area .comments-area .comment-form .comment-form-url {
+    .single-post .content-area .comments-area .comment-form .comment-form-email {
       width: 49%; }
-    .single-post .content-area .comments-area .comment-form .comment-form-author input[type='text'] {
-      width: 100%; }
-    .single-post .content-area .comments-area .comment-form .comment-form-email input[type='email'] {
-      width: 100%; }
+    .single-post .content-area .comments-area .comment-form .comment-form-author {
+      float: left; }
+      .single-post .content-area .comments-area .comment-form .comment-form-author input[type='text'] {
+        width: 100%; }
+    .single-post .content-area .comments-area .comment-form .comment-form-email {
+      float: right; }
+      .single-post .content-area .comments-area .comment-form .comment-form-email input[type='email'] {
+        width: 100%; }
     .single-post .content-area .comments-area .comment-form .comment-form-url input[type='url'] {
       width: 100%; }
     .single-post .content-area .comments-area .comment-form .comment-form-cookies-consent {
@@ -1922,7 +1930,7 @@ object {
     color: #fff;
     display: none; }
 
-.error404 .not-found .page-content .widget-archive select[name="archive-dropdown"] {
+.error404 .not-found .page-content .widget-archive select {
   font-family: 'Merriweather Web', sans-serif; }
 
 .error404 .not-found .widget-title,
