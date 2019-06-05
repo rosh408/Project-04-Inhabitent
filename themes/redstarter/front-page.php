@@ -56,11 +56,11 @@ get_header(); ?>
 							<a class="post-thumbnail" href="<?php echo get_the_permalink(); ?>">
 								<img alt="inhabitent journal photo" src="<?php the_post_thumbnail('large'); ?>
 						    														</a>
-						    													<div class=" journal-post-text">
+						    	<div class=" journal-post-text">
 								<p class="date-comment"> <?php echo get_the_date(); ?> | <?php echo get_comments_number(); ?> Comments </p>
-								<h3><?php the_title(); ?></h3>
+								<h3><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<a class=" read-more" href="<?php echo get_the_permalink(); ?> "> Read Entry</a>
-				</div>
+							</div>
 				</article>
 			<?php endforeach;
 		wp_reset_postdata(); ?>
