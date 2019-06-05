@@ -211,7 +211,6 @@
             font-size: 0.75rem;
           }
           h3 {
-           
           }
         }
         p {
@@ -227,7 +226,6 @@
           letter-spacing: 2px;
           a {
             text-decoration: none;
-    
           }
         }
         .read-more {
@@ -728,6 +726,7 @@
             box-shadow: none;
             color: #fff;
             border: 1px solid $color__background-body;
+            text-shadow: none;
           }
         }
       }
@@ -750,23 +749,24 @@
         flex-direction: column;
         flex-wrap: wrap;
         .required {
-          color: #d99054
+          color: #d99054;
         }
-        .comment-form-author, .comment-form-url {
+        .comment-form-author,
+        .comment-form-url {
           width: 49%;
         }
         .comment-form-author {
-          input[type="text"] {
+          input[type='text'] {
             width: 100%;
           }
         }
         .comment-form-email {
-          input[type="email"] {
+          input[type='email'] {
             width: 100%;
           }
         }
         .comment-form-url {
-          input[type="url"] {
+          input[type='url'] {
             width: 100%;
           }
         }
@@ -782,7 +782,7 @@
           }
         }
         .form-submit {
-          input[type="submit"] {
+          input[type='submit'] {
             background: transparent;
             box-shadow: none;
             border-radius: 0;
@@ -792,8 +792,11 @@
             color: $color__background-body;
             text-shadow: none;
             border: none;
-            padding: .8rem 1.3rem;
-            font-size: .9rem;
+            padding: 0.8rem 1.3rem;
+            font-size: 0.9rem;
+            &:hover {
+              background-color: #1c5e5a;
+            }
           }
         }
       }
@@ -833,6 +836,13 @@
       .widget-area {
         padding: 3rem 0 3rem 3rem;
         width: 27%;
+        .number-info,
+        .email-info,
+        .widget a {
+          &:hover {
+            color: #2f1339;
+          }
+        }
         .widget_archive {
           ul {
             margin: 0;
@@ -972,8 +982,6 @@
           font-size: 0.9rem;
           text-transform: uppercase;
           padding: 0.8rem 1.3rem;
-         
-         
         }
         input[type='text'],
         input[type='email'],
@@ -1063,6 +1071,16 @@
     .type-page,
     .type-post {
       margin: 2rem 0 3rem 0;
+      .entry-summary {
+        p {
+          &:nth-child(1n) {
+            font-family: 'Merriweather Web', sans-serif;
+          }
+        }
+      }
+      .entry-meta {
+        text-transform: uppercase;
+      }
       .read-more {
         a {
           text-decoration: none;
@@ -1082,6 +1100,7 @@
         }
       }
     }
+
     .search-pagination {
       margin-top: 0;
       span,
@@ -1121,20 +1140,30 @@
           ::placeholder {
             font-family: 'Merriweather Web', sans-serif;
           }
-          input[type='search'] {
-            border: 1px solid #e1e1e1;
+          label {
+            input {
+              font-family: 'Merriweather Web', sans-serif;
+            }
+            input[type='search'] {
+              border: 1px solid #e1e1e1;
+            }
+            .search-field {
+              padding: 6px;
+              background-color: #f4f4f4;
+            }
           }
-          .search-field {
-            padding: 6px;
-            background-color: #f4f4f4;
-          }
-
           .icon-search {
             .fa-search {
               color: $color__background-body;
               display: none;
             }
           }
+        }
+      }
+      .widget-archive {
+        select[name="archive-dropdown"] {
+          font-family: 'Merriweather Web', sans-serif;
+          
         }
       }
     }
@@ -1298,7 +1327,7 @@
             a {
               color: $color__background-body;
               &:hover {
-                color: #d8a57b;
+                color: #fbe8d9;
               }
             }
           }
@@ -1306,7 +1335,7 @@
         .header-search {
           .search-field {
             &::placeholder {
-              color: rgba(217, 144, 84, 1);
+              color: #fbe8d9;
             }
           }
           input[type='search'] {

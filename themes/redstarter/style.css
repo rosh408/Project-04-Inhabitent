@@ -1420,7 +1420,8 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       color: #fff;
-      border: 1px solid #fff; }
+      border: 1px solid #fff;
+      text-shadow: none; }
 
 .single-post .content-area .post-navigation {
   display: none; }
@@ -1445,13 +1446,14 @@ object {
         flex-wrap: wrap; }
     .single-post .content-area .comments-area .comment-form .required {
       color: #d99054; }
-    .single-post .content-area .comments-area .comment-form .comment-form-author, .single-post .content-area .comments-area .comment-form .comment-form-url {
+    .single-post .content-area .comments-area .comment-form .comment-form-author,
+    .single-post .content-area .comments-area .comment-form .comment-form-url {
       width: 49%; }
-    .single-post .content-area .comments-area .comment-form .comment-form-author input[type="text"] {
+    .single-post .content-area .comments-area .comment-form .comment-form-author input[type='text'] {
       width: 100%; }
-    .single-post .content-area .comments-area .comment-form .comment-form-email input[type="email"] {
+    .single-post .content-area .comments-area .comment-form .comment-form-email input[type='email'] {
       width: 100%; }
-    .single-post .content-area .comments-area .comment-form .comment-form-url input[type="url"] {
+    .single-post .content-area .comments-area .comment-form .comment-form-url input[type='url'] {
       width: 100%; }
     .single-post .content-area .comments-area .comment-form .comment-form-cookies-consent {
       display: none; }
@@ -1461,7 +1463,7 @@ object {
         font-family: "Novecento Sans Web", sans-serif;
         text-transform: uppercase;
         color: #2f1339; }
-    .single-post .content-area .comments-area .comment-form .form-submit input[type="submit"] {
+    .single-post .content-area .comments-area .comment-form .form-submit input[type='submit'] {
       background: transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -1472,8 +1474,10 @@ object {
       color: #fff;
       text-shadow: none;
       border: none;
-      padding: .8rem 1.3rem;
-      font-size: .9rem; }
+      padding: 0.8rem 1.3rem;
+      font-size: 0.9rem; }
+      .single-post .content-area .comments-area .comment-form .form-submit input[type='submit']:hover {
+        background-color: #1c5e5a; }
 
 /* Content and Sidebar styling */
 .blog .hfeed,
@@ -1551,6 +1555,40 @@ object {
     .category-not-really-camping .hfeed .site-content .widget-area {
       padding: 3rem 0 3rem 3rem;
       width: 27%; }
+      .blog .hfeed .site-content .widget-area .number-info:hover,
+      .blog .hfeed .site-content .widget-area .email-info:hover,
+      .blog .hfeed .site-content .widget-area .widget a:hover,
+      .page-find-us .hfeed .site-content .widget-area .number-info:hover,
+      .page-find-us .hfeed .site-content .widget-area .email-info:hover,
+      .page-find-us .hfeed .site-content .widget-area .widget a:hover,
+      .single-post .hfeed .site-content .widget-area .number-info:hover,
+      .single-post .hfeed .site-content .widget-area .email-info:hover,
+      .single-post .hfeed .site-content .widget-area .widget a:hover,
+      .date .hfeed .site-content .widget-area .number-info:hover,
+      .date .hfeed .site-content .widget-area .email-info:hover,
+      .date .hfeed .site-content .widget-area .widget a:hover,
+      .error404 .hfeed .site-content .widget-area .number-info:hover,
+      .error404 .hfeed .site-content .widget-area .email-info:hover,
+      .error404 .hfeed .site-content .widget-area .widget a:hover,
+      .search-results .hfeed .site-content .widget-area .number-info:hover,
+      .search-results .hfeed .site-content .widget-area .email-info:hover,
+      .search-results .hfeed .site-content .widget-area .widget a:hover,
+      .search-no-results .hfeed .site-content .widget-area .number-info:hover,
+      .search-no-results .hfeed .site-content .widget-area .email-info:hover,
+      .search-no-results .hfeed .site-content .widget-area .widget a:hover,
+      .category-recipes .hfeed .site-content .widget-area .number-info:hover,
+      .category-recipes .hfeed .site-content .widget-area .email-info:hover,
+      .category-recipes .hfeed .site-content .widget-area .widget a:hover,
+      .category-how-tos .hfeed .site-content .widget-area .number-info:hover,
+      .category-how-tos .hfeed .site-content .widget-area .email-info:hover,
+      .category-how-tos .hfeed .site-content .widget-area .widget a:hover,
+      .category-contests .hfeed .site-content .widget-area .number-info:hover,
+      .category-contests .hfeed .site-content .widget-area .email-info:hover,
+      .category-contests .hfeed .site-content .widget-area .widget a:hover,
+      .category-not-really-camping .hfeed .site-content .widget-area .number-info:hover,
+      .category-not-really-camping .hfeed .site-content .widget-area .email-info:hover,
+      .category-not-really-camping .hfeed .site-content .widget-area .widget a:hover {
+        color: #2f1339; }
       .blog .hfeed .site-content .widget-area .widget_archive ul,
       .page-find-us .hfeed .site-content .widget-area .widget_archive ul,
       .single-post .hfeed .site-content .widget-area .widget_archive ul,
@@ -1812,6 +1850,14 @@ object {
 .search-results .content-area .type-page,
 .search-results .content-area .type-post {
   margin: 2rem 0 3rem 0; }
+  .search-results .content-area .product .entry-summary p:nth-child(1n),
+  .search-results .content-area .type-page .entry-summary p:nth-child(1n),
+  .search-results .content-area .type-post .entry-summary p:nth-child(1n) {
+    font-family: 'Merriweather Web', sans-serif; }
+  .search-results .content-area .product .entry-meta,
+  .search-results .content-area .type-page .entry-meta,
+  .search-results .content-area .type-post .entry-meta {
+    text-transform: uppercase; }
   .search-results .content-area .product .read-more a,
   .search-results .content-area .type-page .read-more a,
   .search-results .content-area .type-post .read-more a {
@@ -1865,14 +1911,19 @@ object {
     font-family: 'Merriweather Web', sans-serif; }
   .error404 .not-found .page-content .search-form fieldset ::placeholder {
     font-family: 'Merriweather Web', sans-serif; }
-  .error404 .not-found .page-content .search-form fieldset input[type='search'] {
+  .error404 .not-found .page-content .search-form fieldset label input {
+    font-family: 'Merriweather Web', sans-serif; }
+  .error404 .not-found .page-content .search-form fieldset label input[type='search'] {
     border: 1px solid #e1e1e1; }
-  .error404 .not-found .page-content .search-form fieldset .search-field {
+  .error404 .not-found .page-content .search-form fieldset label .search-field {
     padding: 6px;
     background-color: #f4f4f4; }
   .error404 .not-found .page-content .search-form fieldset .icon-search .fa-search {
     color: #fff;
     display: none; }
+
+.error404 .not-found .page-content .widget-archive select[name="archive-dropdown"] {
+  font-family: 'Merriweather Web', sans-serif; }
 
 .error404 .not-found .widget-title,
 .error404 .not-found .widgettitle {
@@ -2005,19 +2056,19 @@ object {
   color: #fff; }
   .page-about .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a:hover,
   .home .hfeed .site-header .main-navigation .menu-menu-menu-container .menu a:hover {
-    color: #d8a57b; }
+    color: #fbe8d9; }
 
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::-webkit-input-placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::-webkit-input-placeholder {
-  color: #d99054; }
+  color: #fbe8d9; }
 
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::-ms-input-placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::-ms-input-placeholder {
-  color: #d99054; }
+  color: #fbe8d9; }
 
 .page-about .hfeed .site-header .main-navigation .header-search .search-field::placeholder,
 .home .hfeed .site-header .main-navigation .header-search .search-field::placeholder {
-  color: #d99054; }
+  color: #fbe8d9; }
 
 .page-about .hfeed .site-header .main-navigation .header-search input[type='search'],
 .home .hfeed .site-header .main-navigation .header-search input[type='search'] {
