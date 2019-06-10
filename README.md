@@ -21,6 +21,6 @@ JS / jQuery:
 ![alt text](screenshots/function-declaration.png)
 
 Git: 
-- having a fair number of commits for a huge project like Inhabitent is essential.
+- having a fair number of commits for a huge project like Inhabitent is essential
 
 

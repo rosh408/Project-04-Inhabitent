@@ -36,7 +36,6 @@
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 					<div class="header-search">
 						<?php get_search_form(); ?>
-						
 					</div>
 				</div>
 			</nav>
